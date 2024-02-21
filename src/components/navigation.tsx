@@ -31,7 +31,7 @@ const Navigation = () => {
         onClick={() => scrollToSection("home")}
         href="/"
       >
-        <Image src={"/logo.svg"} width={83} height={47} alt={""} />
+        <Image src={"/logo.svg"} width={83} height={47} alt={"Logo"} />
       </Link>
       <div className=" inline-flex items-start gap-[2.5rem]">
         <NavMenu name="About Us" sectionName="about" />
