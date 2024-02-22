@@ -262,13 +262,4 @@ const About = () => {
   );
 };
 
-// color: #B860AC;
-// text-align: center;
-// leading-trim: both;
-// text-edge: cap;
-// font-family: Grandis;
-// font-size: 4rem;
-// font-style: normal;
-// font-weight: 400;
-// line-height: normal;
 export default About;

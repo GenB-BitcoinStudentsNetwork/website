@@ -9,7 +9,7 @@ const grandis = localFont({ src: "../../static-font/Grandis-Bold.woff2" });
 const Hero = () => {
   return (
     <div className="flex pt-[8rem] w-full flex-col items-center justify-center gap-2">
-      <div className="w-[67rem]">
+      <div className="flex flex-col items-center w-[67rem] gap-12">
         <div className="flex flex-col items-center gap-[1.5rem]">
           <h1
             className={`text-black font-bold text-[4rem] text-center leading-[4.6rem] w-[39.4375rem] ${grandis.className}`}
@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
         <div>
           <Image
-            src={"/students.png"}
+            src={"/bitcoin_student.png"}
             width={1072}
             height={639}
             alt="Bitcoin Student"
