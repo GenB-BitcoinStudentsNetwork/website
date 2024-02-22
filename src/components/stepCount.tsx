@@ -1,0 +1,18 @@
+import { grandisBold } from "@/font/grandis";
+
+interface Props {
+  step: string;
+}
+const StepCount = ({ step }: Props) => {
+  return (
+    <div className="flex items-center w-[4rem] h-[4rem]">
+      <h2
+        className={`text-primary text-[4rem] ${grandisBold.className} text-center font-normal leading-normal`}
+      >
+        {step}
+      </h2>
+    </div>
+  );
+};
+
+export default StepCount;

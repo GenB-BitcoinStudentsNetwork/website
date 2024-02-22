@@ -18,6 +18,7 @@ const config: Config = {
       },
       colors: {
         primary: "#B860AC",
+        "dark-green": "#00260B",
       },
     },
   },

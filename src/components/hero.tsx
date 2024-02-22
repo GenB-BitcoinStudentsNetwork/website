@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="w-[67rem]">
         <div className="flex flex-col items-center gap-[1.5rem]">
           <h1
-            className={`text-black font-bold text-[4rem] text-center leading-[4.6rem] ${grandis.className}`}
+            className={`text-black font-bold text-[4rem] text-center leading-[4.6rem] w-[39.4375rem] ${grandis.className}`}
           >
             A Network of Student Bitcoiners 
           </h1>
