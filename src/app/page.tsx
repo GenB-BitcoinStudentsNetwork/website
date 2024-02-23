@@ -1,5 +1,6 @@
 "use client";
 import About from "@/components/about";
+import Board from "@/components/board/board";
 import BtcPayButton from "@/components/btcpay/btcpayButton";
 import Founders from "@/components/founder";
 import GetInvolved from "@/components/getInvolved";
@@ -28,6 +29,9 @@ export default function Home() {
       </div> */}
       <div id="founders">
         <Founders />
+      </div>
+      <div id="board">
+        <Board />
       </div>
     </main>
   );
