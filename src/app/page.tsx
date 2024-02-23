@@ -1,6 +1,7 @@
 "use client";
 import About from "@/components/about";
 import BtcPayButton from "@/components/btcpay/btcpayButton";
+import Founders from "@/components/founder";
 import GetInvolved from "@/components/getInvolved";
 import Hero from "@/components/hero";
 import Navigation from "@/components/navigation";
@@ -25,7 +26,9 @@ export default function Home() {
       {/* <div>
         <BtcPayButton />
       </div> */}
-      <div id="founder"></div>
+      <div id="founders">
+        <Founders />
+      </div>
     </main>
   );
 }
