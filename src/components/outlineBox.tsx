@@ -1,5 +1,4 @@
 "use client";
-import { grandisRegular } from "@/font/grandis";
 import React, { ReactNode } from "react";
 
 interface Props {
