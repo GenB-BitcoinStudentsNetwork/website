@@ -6,6 +6,7 @@ import Founders from "@/components/founder";
 import GetInvolved from "@/components/getInvolved";
 import Hero from "@/components/hero";
 import Navigation from "@/components/navigation";
+import NetworkMap from "@/components/networkMap";
 import Resources from "@/components/resources";
 
 export default function Home() {
@@ -32,6 +33,9 @@ export default function Home() {
       </div>
       <div id="board">
         <Board />
+      </div>
+      <div id="network">
+        <NetworkMap />
       </div>
     </main>
   );
