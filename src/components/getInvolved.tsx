@@ -11,24 +11,24 @@ const GetInvolved = () => {
         <Heading2 text="Ways to Get Involved" className="text-center" />
         <div className="flex items-start gap-6">
           <InvolveBox
+            heading="Industry"
+            imagePath="/industry.svg"
+            text="Organize/speak on a panel, host a Twitter space, provide financial sponsorship (goes through GenB), donate books, equipment, resources, etc., offer mentorship and expertise, share internship and job opportunities, lead workshops and training, offer networking opportunities, brainstorm collaborative projects…anything you can think of."
+            className="w-[24.25rem]"
+            buttonText="Get Started"
+          />
+          <InvolveBox
             heading="Students"
             imagePath="/student.svg"
             text="Join the network! Fill out the form below to receive support in starting or growing your University's Bitcoin Club, receiving access to educational/ job opportunities, or just connecting with other Bitcoin students."
-            className="w-[18.1875rem]"
+            className="w-[18.75rem]"
             buttonText="Join Here!"
-          />
-          <InvolveBox
-            heading="Industry"
-            imagePath="/industry.svg"
-            text="Organize/speak on a panel, Host a Twitter space, Financial Sponsorship (goes through GenB), Donating Books, Equipment, Resources, etc., Mentorship and Expertise, Internship and Job Opportunities, Workshops and Training, Networking Opportunities, Collaborative Projects, Event Sponsorship, Brand Promotion and Marketing Support…anything you can think of!"
-            className="w-[34.0625rem]"
-            buttonText="Get Started"
           />
           <InvolveBox
             heading="Donate"
             imagePath="/donation.svg"
             text="Donate to help the network grow and foster a great community of students bitcoiners."
-            className="w-[12.75rem]"
+            className="w-[18.75rem]"
             buttonText="Donate via Bitcoin"
           />
         </div>

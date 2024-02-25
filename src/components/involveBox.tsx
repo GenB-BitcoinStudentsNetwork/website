@@ -18,15 +18,24 @@ const InvolveBox = ({
   className,
 }: Props) => {
   return (
-    <div className="flex p-6 flex-col justify-between items-start gap-2 bg-[#FCF5FB] h-[27rem]">
+    <div className="flex p-6 flex-col justify-between items-start gap-2 bg-[#FCF5FB] h-[27.0625rem]">
       <div className="flex flex-col items-start gap-4">
-        <Image src={imagePath} height={72} width={72} alt={heading} />
+        <div className="display items-center justify-center h-[4.5rem] w-[4.5rem]">
+          <Image
+            src={imagePath}
+            height={0}
+            width={0}
+            alt={heading}
+            className="h-[4.5rem] w-[4.5rem]"
+            sizes="100vw"
+          />
+        </div>
         <div className="flex flex-col items-start gap-4">
           <h3 className="text-black text-xl font-semibold leading-[150%]">
             {heading}
           </h3>
           <p
-            className={`text-black text-base font-normal leadind-[150%] mb-6 ${className}`}
+            className={`text-black text-base text-justify font-normal leadind-[150%] ${className}`}
           >
             {text}
           </p>
