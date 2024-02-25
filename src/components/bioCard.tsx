@@ -7,9 +7,20 @@ interface Props {
   imagePath: string;
   name: string;
   info: string;
+  twitterLink: string;
+  linkedinLink: string;
+  npub: string;
 }
 
-const BioCard = ({ founder, imagePath, name, info }: Props) => {
+const BioCard = ({
+  founder,
+  imagePath,
+  name,
+  info,
+  twitterLink,
+  linkedinLink,
+  npub,
+}: Props) => {
   return (
     <div className="flex flex-col items-start gap-4">
       <div
@@ -67,13 +78,17 @@ const BioCard = ({ founder, imagePath, name, info }: Props) => {
             Show bio
           </button>
           <div className="flex items-start gap-2">
-            <SocialLink name="twitter" imagePath="/dark_twitter.svg" link="" />
+            <SocialLink
+              name="twitter"
+              imagePath="/dark_twitter.svg"
+              link={twitterLink}
+            />
             <SocialLink
               name="linkedin"
               imagePath="/blue_linkedin.svg"
-              link=""
+              link={linkedinLink}
             />
-            <SocialLink name="nostr" imagePath="/nostr.svg" link="" />
+            <SocialLink name="nostr" imagePath="/nostr.svg" link={npub} />
           </div>
         </div>
       </div>
