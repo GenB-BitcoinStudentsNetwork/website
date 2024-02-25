@@ -27,14 +27,15 @@ const About = () => {
           height={40}
         />
       </div>
-      <div className="flex w-full py-16 px-[6.5rem] flex-col items-center justify-center gap-2">
+      <div className="flex w-full py-16 px-[6.5rem] flex-col items-center justify-center gap-2 bg-dark-green">
         <div className="flex flex-col items-center gap-16">
-          <p className="text-black text-center text-base font-sans font-normal leading-[1.5rem] w-[35.75rem]">
-            The Bitcoin Students Network is a “one-stop shop” for students
+          <p className="text-white text-center text-base font-sans font-normal leading-[1.5rem] w-[35.75rem]">
+            The Bitcoin Students Network is a{" "}
+            <span className="font-bold">“one-stop shop”</span> for students
             interested in learning about Bitcoin and contributing to the space.
             We aim to connect students to resources (logistical, educational &
             financial), opportunities (educational, job & skills-based), and
-            importantly, to each other.
+            importantly, <span className="font-bold">to each other</span>.
           </p>
           <div className="flex flex-col items-center gap-4">
             <h2
