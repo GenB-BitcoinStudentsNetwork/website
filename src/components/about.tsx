@@ -1,8 +1,10 @@
 "use client";
 import { grandisBold } from "@/font/grandis";
 import Image from "next/image";
+import Heading2 from "./heading2";
 import OutlineBox from "./outlineBox";
 import StepCount from "./stepCount";
+import Value from "./value";
 
 const About = () => {
   return (
@@ -153,7 +155,15 @@ const About = () => {
       </div>
       <div className="flex py-16 px-[6.5rem] flex-col justify-center items-center gap-2">
         <div className="flex items-start gap-[3.875rem]">
-          <div className="flex items-center justify-center px-[4.5rem] py-[0.25rem]">
+          <div className="flex items-start flex-col gap-[6.125rem]">
+            <div className="flex flex-col items-start gap-6">
+              <Heading2 text="Core Values" />
+              <p className="text-black text-base text-justify leading-[150%] font-normal w-[35.3125rem]">
+                We are a peer-to-peer network that is decentralized, but not
+                disorganized. We have a founding team, an (industry) Board of
+                Advisors, and a (student) Board of Advisors.
+              </p>
+            </div>
             <Image
               src={"/values.png"}
               alt="Vision"
@@ -161,48 +171,36 @@ const About = () => {
               width={514}
             />
           </div>
-          <div className="flex flex-col items-start gap-6">
-            <h2
-              className={`text-primary text-[2.5rem] font-bold leading-normal ${grandisBold.className}`}
-            >
-              Core Values
-            </h2>
-            <p className="text-black text-base text-justify leading-[150%] font-normal w-[28.8125rem]">
-              We are a peer-to-peer network that is decentralized, but not
-              disorganized. We have a founding team, an (industry) Board of
-              Advisors, and a (student) Board of Advisors.
-            </p>
-            <div className="flex flex-col w-[28.8125rem]">
-              <h3 className="text-black text-xl font-semibold leading-[150%] mb-2">
-                We believe in: 
-              </h3>
-              <ul className="list-disc ml-[1rem] text-black text-justify text-base font-normal leading-[150%]">
-                <li>
-                  Freedom through knowledge:
-                  <ul className="list-disc ml-[1rem]">
-                    <li>
-                      Individuals' freedom is the most important thing and we
-                      believe that to obtain freedom, knowledge is essential.
-                      Based on this consideration we focus on Bitcoin education
-                      in order to teach young students why it's time to build a
-                      more fair society.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Open Source:
-                  <ul className="list-disc ml-[1rem]">
-                    <li>
-                      The activities of BSN and all BSN affiliated clubs take
-                      place in an open-source and non-profit logic
-                    </li>
-                  </ul>
-                </li>
-                <li>Proof of Work</li>
-                <li>First Principles Thinking; Don’t Trust, Verify</li>
-                <li>Low Time Preference</li>
-                <li>Cypherpunk Vision</li>
-              </ul>
+
+          <div className="flex flex-col items-start gap-4 w-[37.8125rem]">
+            <h3 className="text-black text-xl font-semibold leading-[150%] mb-2">
+              We believe in: 
+            </h3>
+            <div className="flex flex-col items-start gap-6">
+              <Value
+                heading="Freedom through knowledge"
+                text="Individuals' freedom is the most important thing and we believe that to obtain freedom, knowledge is essential. Based on this consideration, we focus on Bitcoin education to teach students why it's time to build a more inclusive, truthful, and honest world."
+              />
+              <Value
+                heading="Open Source"
+                text="The activities of BSN and all BSN-affiliated nodes take place in an open-source and non-profit logic. "
+              />
+              <Value
+                heading="Proof of Work"
+                text="Exert energy to do your own work; protect your integrity. Don't stake your worth/ability on another's words or actions. "
+              />
+              <Value
+                heading="First Principles Thinking: Don't Trust, Verify"
+                text="Bitcoin restores your agency. Don't rent out your decision-making and thought-forming abilities; form your own opinions and do your own research. "
+              />
+              <Value
+                heading="Low Time Preference"
+                text="Commit to thinking long-term, to resisting short-term gratification, and to your curiosity. "
+              />
+              <Value
+                heading="Cypherpunk Vision"
+                text="Awareness about the totalitarian drift of the fiat system unites nodes, fighting against mass surveillance and the abuse of power by governments in defense of individual freedoms and human rights. “We know that…a widely dispersed system can't be shut down” (h/t A Cypherpunk's Manifesto). "
+              />
             </div>
           </div>
         </div>
