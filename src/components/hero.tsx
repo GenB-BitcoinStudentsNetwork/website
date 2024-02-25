@@ -18,7 +18,7 @@ const Hero = () => {
           </h1>
           <div className="flex justify-center items-start gap-[1.5rem]">
             <PrimaryButton text="Get Involved" />
-            <SecondaryButton text="See Our Network" />
+            <SecondaryButton text="See Our Resources" />
           </div>
         </div>
         <div>

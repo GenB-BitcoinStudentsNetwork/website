@@ -35,9 +35,8 @@ const Navigation = () => {
       </Link>
       <div className=" inline-flex items-start gap-[2.5rem]">
         <NavMenu name="About Us" sectionName="about" />
-        <NavMenu name="Our Founders" sectionName="founders" />
         <NavMenu name="Advisory Board" sectionName="board" />
-        <NavMenu name="Resources" sectionName="resources" />
+        <NavMenu name="Our Network" sectionName="network" />
       </div>
       <button className="bg-primary text-white px-[1.2rem] py-[0.875rem] rounded-lg gap-2">
         Get Involved
