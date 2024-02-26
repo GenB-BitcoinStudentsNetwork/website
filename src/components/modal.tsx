@@ -20,7 +20,7 @@ const Modal = ({ isOpen, closeModal, children }: Props) => {
     <>
       {isOpen && (
         <div
-          className="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center cursor-pointer"
+          className="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center cursor-pointer z-20"
           onClick={closeModal}
         >
           <div className="bg-white flex flex-col items-start gap-2 p-8 shadow-md relative rounded-2xl border-[1px] border-solid border-[#E3BFDE] cursor-default">

@@ -23,7 +23,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className="w-full flex justify-between items-center px-[6.5rem] pt-[1.5625rem] pb-[1.5rem] bg-white fixed"
+      className="w-full flex justify-between items-center px-[6.5rem] pt-[1.5625rem] pb-[1.5rem] bg-white fixed z-10"
       style={{ boxShadow: "0px 2px 0px 0px rgba(0, 7, 47, 0.10)" }}
     >
       <Link
