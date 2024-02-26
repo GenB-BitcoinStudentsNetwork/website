@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Navigation />
-      <div>
+      <div id="home">
         <Hero />
       </div>
       <div id="about">
