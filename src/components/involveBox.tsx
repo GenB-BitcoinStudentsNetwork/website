@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import BtcPayButton from "./btcpay/btcpayButton";
 import PrimaryButton from "./buttons/primary";
 
 interface Props {
@@ -8,6 +9,7 @@ interface Props {
   imagePath: string;
   heading: string;
   buttonText: string;
+  donation?: boolean;
 }
 
 const InvolveBox = ({
@@ -16,6 +18,7 @@ const InvolveBox = ({
   heading,
   text,
   className,
+  donation,
 }: Props) => {
   return (
     <div className="flex p-6 flex-col justify-between items-start gap-2 bg-[#FCF5FB] h-[27.0625rem]">
@@ -41,7 +44,7 @@ const InvolveBox = ({
           </p>
         </div>
       </div>
-      <PrimaryButton text={buttonText} />
+      {donation ? <BtcPayButton /> : <PrimaryButton text={buttonText} />}
     </div>
   );
 };

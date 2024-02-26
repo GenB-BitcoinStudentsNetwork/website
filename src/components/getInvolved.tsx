@@ -30,6 +30,7 @@ const GetInvolved = () => {
             text="Donate to help the network grow and foster a great community of students bitcoiners."
             className="w-[18.75rem]"
             buttonText="Donate via Bitcoin"
+            donation
           />
         </div>
       </div>

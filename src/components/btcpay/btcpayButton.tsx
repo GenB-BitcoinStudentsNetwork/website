@@ -1,13 +1,17 @@
 "use client";
-import styles from "./btcpay.module.css";
+
+import { ReactBtcPayButton } from "react-btcpay-paybutton";
 
 const BtcPayButton = () => {
   return (
-    <form
-      method="POST"
-      action="https://btcpay0.voltageapp.io/api/v1/invoices"
-      className={`${styles["btcpay-form"]} ${styles["btcpay-form--block"]}`}
-    >
+    // <ReactBtcPayButton
+    //   btcPayDomain="https://btcpay0.voltageapp.io" // Your BTCPay Server URL
+    //   storeId="G25NGUycXAJ69hDsSLEyxBjdzib7zVbYy1b8pbzq2bG6" // Your BTCPay Server Store ID
+    //   // Additional options as needed (see Step 3 below)
+    //   imageShow={false}
+    // />
+
+    <form method="POST" action="https://btcpay0.voltageapp.io/api/v1/invoices">
       <input
         type="hidden"
         name="storeId"
@@ -15,12 +19,11 @@ const BtcPayButton = () => {
       />
       <input type="hidden" name="currency" value="USD" />
       <input
-        type="image"
-        className={`${styles.submit}`}
+        type="submit"
         name="submit"
-        src="https://btcpay0.voltageapp.io/img/paybutton/pay.svg"
-        style={{ width: "209px" }}
+        value={"Donate via Bitcoin"}
         alt="Pay with BTCPay Server, a Self-Hosted Bitcoin Payment Processor"
+        className={`py-[1.5rem] px-[2rem] bg-primary text-white rounded-lg text-base font-semibold font-sans leading-normal gap-[0.5rem] cursor-pointer`}
       />
     </form>
   );
