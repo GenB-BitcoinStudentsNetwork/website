@@ -93,8 +93,8 @@ const BioCard = ({
         <div
           className={`flex items-center justify-center rounded-lg ${
             founder
-              ? "h-[25.3125rem] w-[23.1875rem]"
-              : "w-[17.375rem] h-[19.59181rem]"
+              ? "h-23.33388rem lg:h-[25.3125rem] w-[21.375rem] lg:w-[23.1875rem]"
+              : "w-[10.25rem] lg:w-[17.375rem] 11.55775rem; lg:h-[19.59181rem]"
           }`}
           style={{
             background:
@@ -127,7 +127,7 @@ const BioCard = ({
             </p>
             <div className="flex flex-col items-start">
               {founder && (
-                <p className="text-black text-base font-semibold leading-[150%]">
+                <p className="text-black text-sm lg:text-base font-semibold leading-[150%]">
                   Co-founder at the Bitcoin Student Network
                 </p>
               )}
