@@ -104,15 +104,13 @@ const Board = () => {
               />
               <BioCard
                 imagePath="/lisa.png"
-                name="Martell Fox"
-                info="Founder of Layer 4 Talent | Advisor at Librería de Satoshi | Advisor at Apollo"
+                name="Lisa Neigut"
+                info="Founder Base58"
                 twitterLink="https://twitter.com/niftynei"
                 linkedinLink="https://www.linkedin.com/in/lisaneigut/"
                 npub="npub1e0z776cpe0gllgktjk54fuzv8pdfxmq6smsmh8xd7t8s7n474n9smk0txy"
                 bio={[
-                  "Lorem ipsum dolor sit amet consectetur. Nulla at at ornare scelerisque non.Lorem ipsum dolor sit amet consectetur. Nulla at at ornare scelerisque non.Lorem ipsum dolor sit amet consectetur. Nulla at at ornare scelerisque non.",
-                  "Lorem ipsum dolor sit amet consectetur. Nulla at at ornare scelerisque non.Lorem ipsum dolor sit amet consectetur. Nulla at at ornare scelerisque non.Lorem ipsum dolor sit amet consectetur. Nulla at at ornare scelerisque non.",
-                  "Lorem ipsum dolor sit amet consectetur. Nulla at at ornare scelerisque non.Lorem ipsum dolor sit amet consectetur. Nulla at at ornare scelerisque non.Lorem ipsum dolor sit amet consectetur. Nulla at at ornare scelerisque non.",
+                  "Founder Base58 | Founder bitcoin++ | Lightning Protocol Engineer @ Blockstream",
                 ]}
               />
             </BoardDepartment>

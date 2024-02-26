@@ -37,9 +37,9 @@ const BioCard = ({
   return (
     <>
       <Modal isOpen={openModal} closeModal={closeModalHandler}>
-        <div className="flex items-center gap-8">
+        <div className="flex flex-col lg:flex-row items-center gap-8">
           <div
-            className={`flex items-center justify-center w-[30rem] h-[33.79213rem]`}
+            className={`flex items-center justify-center w-[18.86031rem] h-[21.24431rem] lg:w-[30rem] lg:h-[33.79213rem]`}
             style={{
               background:
                 "linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #B860AC 100%)",
@@ -48,40 +48,40 @@ const BioCard = ({
             <Image
               src={imagePath}
               alt={name}
-              className={`object-cover w-[30rem] h-[33.79213rem]`}
+              className={`object-cover w-[18.86031rem] h-[21.24431rem] lg:w-[30rem] lg:h-[33.79213rem]`}
               width={0}
               height={0}
               sizes="100vw"
             />
           </div>
-          <div className="flex flex-col items-start gap-8 h-[33.79213rem] w-[30rem]">
-            <div className="flex flex-col items-start gap-6">
-              <div className="flex flex-col items-start gap-2">
-                <h3 className="text-black text-2xl font-semibold leading-[150%]">
+          <div className="flex flex-col items-start gap-[1.25738rem] lg:gap-8 w-[18.86031rem] lg:h-[33.79213rem] lg:w-[30rem]">
+            <div className="flex flex-col items-start gap-[0.943rem] lg:gap-6">
+              <div className="flex flex-col items-start gap-[gap-[0.31431rem]] lg:gap-2">
+                <h3 className="text-black text-lg lg:text-2xl font-semibold leading-[150%]">
                   {name}
                 </h3>
-                <p className="text-black text-base italic leading-[150%]">
+                <p className="text-black text-sm lg:text-base italic leading-[150%]">
                   {info}
                 </p>
               </div>
-              <div className="flex flex-col items-start gap-2">
-                <h3 className="text-primary text-xl font-bold leading-[150%]">
+              <div className="flex flex-col items-start gap-[0.31431rem] lg:gap-2">
+                <h3 className="text-primary text-base lg:text-xl font-bold leading-[150%]">
                   Npub
                 </h3>
-                <p className="text-black text-base leading-[150%] break-all">
+                <p className="text-black text-sm lg:text-base leading-[150%] break-all">
                   {npub || "n/a"}
                 </p>
               </div>
             </div>
-            <div className="flex flex-col items-start gap-2">
-              <h3 className="text-primary text-xl font-bold leading-[150%]">
+            <div className="flex flex-col items-start gap-[0.31431rem] lg:gap-2">
+              <h3 className="text-primary text-base lg:text-xl font-bold leading-[150%]">
                 Bio
               </h3>
               {/* text-overflow: ellipsis; white-space: nowrap; */}
-              <div className="flex flex-col gap-4 overflow-y-auto h-[16.75rem] w-[30rem]">
+              <div className="flex flex-col gap-4 overflow-y-auto h-[10.53031rem] w-[18.86031rem] lg:h-[16.75rem] lg:w-[30rem]">
                 {bio.map((text: string) => (
                   <p
-                    className="text-black text-base leading-[150%] text-justify w-[29.125rem]"
+                    className="text-black text-sm lg:text-base leading-[150%] text-justify w-[w-[18.31019rem]] lg:w-[29.125rem]"
                     key={text}
                   >
                     {text}
@@ -135,7 +135,7 @@ const BioCard = ({
             <div className="flex flex-col items-start">
               {founder && (
                 <p className="text-black text-sm lg:text-base font-semibold leading-[150%]">
-                  Co-founder at the Bitcoin Student Network
+                  Co-founder at the Bitcoin Students Network
                 </p>
               )}
               <p

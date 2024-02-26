@@ -108,7 +108,7 @@ const About = () => {
               </OutlineBox>
               <OutlineBox
                 height="h-[14rem]"
-                text="Provide financial support to BSN associated clubs"
+                text="Provide financial support to BSN-associated clubs"
                 className="w-full lg:w-[8.125rem]"
               >
                 <Image
@@ -223,7 +223,7 @@ const About = () => {
             <h2
               className={`${grandisBold.className} text-primary text-[1.5rem] lg:text-[2.5rem] font-bold leading-[120%] lg:leading-normal w-full lg:w-[15.6875rem]`}
             >
-              Our steps to run the network (h/t Satoshi)
+              Our steps to run the Network (h/t Satoshi)
             </h2>
             <div className="flex items-start flex-col lg:flex-row gap-6">
               <OutlineBox
