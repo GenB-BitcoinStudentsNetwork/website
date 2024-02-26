@@ -3,6 +3,7 @@ import Link from "next/link";
 interface Props {
   name: string;
   sectionName: string;
+  className?: string;
 }
 
 const scrollToSection = (id: string) => {
@@ -14,7 +15,7 @@ const scrollToSection = (id: string) => {
   }
 };
 
-const NavMenu = ({ name, sectionName }: Props) => {
+const NavMenu = ({ name, sectionName, className }: Props) => {
   return (
     <div
       className="flex py-0 px-[0.5rem] items-center justify-center gap-[0.5rem]"
@@ -22,7 +23,7 @@ const NavMenu = ({ name, sectionName }: Props) => {
     >
       <Link
         href={`#${sectionName}`}
-        className="font-normal text-base leading-[1.5rem] text-black font-sans hover:text-primary hover:text-[1.01rem]"
+        className={`font-normal text-base leading-[1.5rem] text-black font-sans hover:text-primary hover:text-[1.01rem] ${className}`}
       >
         {name}
       </Link>

@@ -2,6 +2,7 @@
 import About from "@/components/about";
 import Board from "@/components/board/board";
 import BtcPayButton from "@/components/btcpay/btcpayButton";
+import Footer from "@/components/footer";
 import Founders from "@/components/founder";
 import GetInvolved from "@/components/getInvolved";
 import Hero from "@/components/hero";
@@ -36,6 +37,9 @@ export default function Home() {
       </div>
       <div id="network">
         <NetworkMap />
+      </div>
+      <div>
+        <Footer />
       </div>
     </main>
   );
