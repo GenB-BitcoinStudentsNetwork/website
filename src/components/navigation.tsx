@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NavMenu from "./navMenu";
+import { grandisBold } from "@/font/grandis";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -35,7 +36,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`w-full flex-col p-4 md:p-8 lg:px-[6.5rem] lg:pt-[1.5625rem] top-0 lg:pb-[1.5rem] bg-white z-20 flex ${
+      className={`w-full flex-col p-4 md:p-8 lg:px-[6.5rem] lg:pt-[1.5625rem] top-0 lg:pb-[1.5rem] bg-white z-50 flex relative ${
         isActive ? "h-screen" : "h-auto sticky"
       }`}
       style={{ boxShadow: "0px 2px 0px 0px rgba(0, 7, 47, 0.10)" }}
@@ -91,40 +92,30 @@ const Navigation = () => {
         </div>
       </div>
       {isActive && (
-        <div className="flex flex-col items-center w-full h-full mt-16">
-          <div className="flex items-center w-[10.2rem] flex-col gap-6">
+        <div className="flex flex-col items-center w-full h-[21.4375rem] mt-16 bg-white">
+          <div className="flex items-center w-full flex-col gap-6 py-16">
             <NavMenu
               name="About Us"
               sectionName="about"
-              className="text-xl"
+              className={`text-[2rem] font-bold leading-[115%] ${grandisBold.className}`}
               mobile={true}
               closeNav={closeNav}
             />
             <NavMenu
               name="Advisory Board"
               sectionName="board"
-              className="text-xl"
+              className={`text-[2rem] font-bold leading-[115%] ${grandisBold.className}`}
               mobile={true}
               closeNav={closeNav}
             />
             <NavMenu
               name="Our Network"
               sectionName="network"
-              className="text-xl"
+              className={`text-[2rem] font-bold leading-[115%] ${grandisBold.className}`}
               mobile={true}
               closeNav={closeNav}
             />
           </div>
-          <Link
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("get-involved");
-            }}
-            href={"#get-involved"}
-            className="bg-primary text-white px-[1.2rem] py-[0.875rem] rounded-lg gap-2 mt-8"
-          >
-            Get Involved
-          </Link>
         </div>
       )}
     </nav>
