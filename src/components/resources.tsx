@@ -32,7 +32,7 @@ const Resources = () => {
           />
           <ResourceBox heading="Financial" items={[]} />
         </div>
-        <PrimaryButton text="Get Resources" />
+        <PrimaryButton disabled={true} text="Coming soon!" />
       </div>
     </div>
   );
