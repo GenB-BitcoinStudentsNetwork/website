@@ -38,9 +38,16 @@ const Navigation = () => {
         <NavMenu name="Advisory Board" sectionName="board" />
         <NavMenu name="Our Network" sectionName="network" />
       </div>
-      <button className="bg-primary text-white px-[1.2rem] py-[0.875rem] rounded-lg gap-2">
+      <Link
+        onClick={(e) => {
+          e.preventDefault();
+          scrollToSection("get-involved");
+        }}
+        href={"#get-involved"}
+        className="bg-primary text-white px-[1.2rem] py-[0.875rem] rounded-lg gap-2"
+      >
         Get Involved
-      </button>
+      </Link>
     </nav>
   );
 };

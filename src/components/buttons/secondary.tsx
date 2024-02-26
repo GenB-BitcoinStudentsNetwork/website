@@ -1,14 +1,40 @@
 "use client";
 
+import Link from "next/link";
+
 interface Props {
   text: string;
+  link?: string;
 }
 
-const SecondaryButton = ({ text }: Props) => {
+const SecondaryButton = ({ text, link }: Props) => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
   return (
-    <button className="bg-white text-primary gap-[0.5rem] py-[1.5rem] px-[2rem] rounded-lg border-[1px] border-solid border-primary text-base font-sans font-semibold leading-normal">
-      {text}
-    </button>
+    <>
+      {link ? (
+        <Link
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection(link);
+          }}
+          href={`#${link}`}
+          className="bg-white text-primary gap-[0.5rem] py-[1.5rem] px-[2rem] rounded-lg border-[1px] border-solid border-primary text-base font-sans font-semibold leading-normal"
+        >
+          {text}
+        </Link>
+      ) : (
+        <button className="bg-white text-primary gap-[0.5rem] py-[1.5rem] px-[2rem] rounded-lg border-[1px] border-solid border-primary text-base font-sans font-semibold leading-normal">
+          {text}
+        </button>
+      )}
+    </>
   );
 };
 
