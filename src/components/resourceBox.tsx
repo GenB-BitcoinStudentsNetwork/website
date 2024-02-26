@@ -6,8 +6,8 @@ interface Props {
 
 const ResourceBox = ({ heading, items }: Props) => {
   return (
-    <div className="flex h-[7.1875rem] p-4 flex-col items-start gap-2 bg-[#263D2D] rounded-lg">
-      <div className="flex w-[16.25rem] flex-col items-start gap-2">
+    <div className="flex w-full lg:h-[7.1875rem] p-4 flex-col items-start gap-2 bg-[#263D2D] rounded-lg">
+      <div className="flex w-full lg:w-[16.25rem] flex-col items-start gap-2">
         <h3 className="text-white text-lg font-semibold leading-[150%]">
           {heading}
         </h3>
