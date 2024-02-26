@@ -11,7 +11,14 @@ interface Props {
 const SocialLink = ({ link, imagePath, name }: Props) => {
   return (
     <Link href={link} target="_blank">
-      <Image src={imagePath} height={35} width={35} alt={name} />
+      <Image
+        src={imagePath}
+        sizes={"100vw"}
+        height={0}
+        width={0}
+        className={`w-[1.44544rem] h-[1.44544rem] lg:w-[2.1875rem] lg:h-[2.1875rem]`}
+        alt={name}
+      />
     </Link>
   );
 };

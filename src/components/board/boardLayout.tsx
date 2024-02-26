@@ -7,7 +7,11 @@ interface Props {
 }
 
 const BoardLayout = ({ children }: Props) => {
-  return <div className="flex items-start gap-[4.5rem]">{children}</div>;
+  return (
+    <div className="flex flex-col lg:flex-row items-start gap-[4rem] lg:gap-[4.5rem] w-full">
+      {children}
+    </div>
+  );
 };
 
 export default BoardLayout;

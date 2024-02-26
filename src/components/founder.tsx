@@ -8,7 +8,7 @@ const Founders = () => {
     <div className="flex py-8 lg:py-16 px-4 lg:px-2 flex-col justify-center items-center gap-2">
       <div className="flex flex-col items-center gap-6 lg:gap-8">
         <Heading2 text="Meet Our Founders" className="text-center" />
-        <div className="flex flex-col gap-8 items-start lg:gap-[4.5rem]">
+        <div className="flex flex-col lg:flex-row justify-center gap-8 items-center lg:items-start lg:gap-[4.5rem]">
           <BioCard
             founder
             imagePath="/ash.png"

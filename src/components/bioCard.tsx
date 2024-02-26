@@ -93,8 +93,8 @@ const BioCard = ({
         <div
           className={`flex items-center justify-center rounded-lg ${
             founder
-              ? "h-23.33388rem lg:h-[25.3125rem] w-[21.375rem] lg:w-[23.1875rem]"
-              : "w-[10.25rem] lg:w-[17.375rem] 11.55775rem; lg:h-[19.59181rem]"
+              ? "h-full lg:h-[25.3125rem] w-full lg:w-[23.1875rem]"
+              : "w-[12rem] h-[13.55775rem] lg:w-[17.375rem] lg:h-[19.59181rem]"
           }`}
           style={{
             background:
@@ -106,8 +106,8 @@ const BioCard = ({
             alt={name}
             className={`object-cover ${
               founder
-                ? "h-[25.3125rem] w-[23.1875rem]"
-                : "w-[17.375rem] h-[19.59181rem]"
+                ? "h-[23.33388rem] lg:h-[25.3125rem] w-full lg:w-[23.1875rem]"
+                : "w-[12rem] lg:w-[17.375rem] h-[13.55775rem] lg:h-[19.59181rem]"
             }`}
             width={0}
             height={0}
@@ -117,12 +117,16 @@ const BioCard = ({
         <div
           className={`flex flex-col justify-between items-start ${
             founder
-              ? "h-[12.5625rem] w-[23.1875rem]"
-              : "h-[11.0625rem] w-[17.375rem]"
+              ? "lg:h-[12.5625rem] lg:w-[23.1875rem]"
+              : "lg:h-[11.0625rem] lg:w-[17.375rem]"
           }`}
         >
           <div className="flex flex-col items-start gap-2">
-            <p className="text-black text-xl font-semibold leading-[150%]">
+            <p
+              className={`text-black ${
+                founder ? "text-xl" : "text-base lg:text-xl"
+              } font-semibold leading-[150%]`}
+            >
               {name}
             </p>
             <div className="flex flex-col items-start">
@@ -132,22 +136,26 @@ const BioCard = ({
                 </p>
               )}
               <p
-                className={`text-black text-base ${
-                  founder ? "italic" : ""
+                className={`text-black text-sm lg:text-base ${
+                  founder ? "italic" : "w-[10.25rem] lg:w-[17.375rem]"
                 } leading-[150%]`}
               >
                 {info}
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-2 lg:gap-6 mt-[1.18rem] lg:mt-0">
             <button
               onClick={openModalHandler}
-              className="py-2 px-4 gap-2 border-primary border-solid border-[1px] rounded text-primary text-base font-semibold leading-normal"
+              className={`${
+                founder
+                  ? "py-2 px-4 text-base"
+                  : "py-[0.33238rem] px-[0.66475rem] lg:py-2 lg:px-4 text-[0.66475rem] lg:text-base"
+              } gap-2 border-primary border-solid border-[1px] rounded text-primary font-semibold leading-normal`}
             >
               Show bio
             </button>
-            <div className="flex items-start gap-2">
+            <div className="flex items-start gap-[0.33038rem] lg:gap-2">
               <SocialLink
                 name="twitter"
                 imagePath="/dark_twitter.svg"

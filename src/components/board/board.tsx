@@ -7,10 +7,10 @@ import BoardLayout from "./boardLayout";
 
 const Board = () => {
   return (
-    <div className="flex px-[6.5rem] py-16 justify-center items-center gap-2">
-      <div className="flex flex-col items-center gap-8">
+    <div className="flex px-4 lg:px-[6.5rem] py-8 lg:py-16 justify-center items-center gap-2">
+      <div className="flex flex-col items-center gap-8 w-full">
         <Heading2 text="Advisory Board" className="text-center" />
-        <div className="flex flex-col items-start gap-24">
+        <div className="flex flex-col items-start gap-16 lg:gap-24 w-full">
           <BoardLayout>
             <BoardDepartment title="General Advisors">
               <BioCard
