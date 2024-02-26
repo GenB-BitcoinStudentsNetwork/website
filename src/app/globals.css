@@ -8,6 +8,14 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+body.no-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

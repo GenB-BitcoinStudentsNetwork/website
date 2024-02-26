@@ -4,6 +4,8 @@ interface Props {
   name: string;
   sectionName: string;
   className?: string;
+  mobile?: boolean;
+  closeNav?: () => void;
 }
 
 const scrollToSection = (id: string) => {
@@ -15,12 +17,13 @@ const scrollToSection = (id: string) => {
   }
 };
 
-const NavMenu = ({ name, sectionName, className }: Props) => {
+const NavMenu = ({ name, sectionName, className, mobile, closeNav }: Props) => {
   return (
     <div className="flex py-0 px-[0.5rem] items-center justify-center gap-[0.5rem]">
       <Link
         onClick={(e) => {
           e.preventDefault();
+          mobile && closeNav && closeNav();
           scrollToSection(sectionName);
         }}
         href={`#${sectionName}`}
