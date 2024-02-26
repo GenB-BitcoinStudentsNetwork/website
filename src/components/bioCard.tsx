@@ -80,7 +80,10 @@ const BioCard = ({
               {/* text-overflow: ellipsis; white-space: nowrap; */}
               <div className="flex flex-col gap-4 overflow-y-auto h-[16.75rem] w-[30rem]">
                 {bio.map((text: string) => (
-                  <p className="text-black text-base leading-[150%] text-justify w-[29.125rem]">
+                  <p
+                    className="text-black text-base leading-[150%] text-justify w-[29.125rem]"
+                    key={text}
+                  >
                     {text}
                   </p>
                 ))}

@@ -1,17 +1,22 @@
 "use client";
 
+import { useState } from "react";
+
 // @ts-ignore
 import jsVectorMap from "jsvectormap";
 import "jsvectormap/dist/maps/world";
 import "jsvectormap/dist/css/jsvectormap.css";
 import { useEffect } from "react";
-import Heading2 from "./heading2";
+import Heading2 from "../heading2";
+import style from "./map.module.css";
 
 const NetworkMap = () => {
   useEffect(() => {
     const map = new jsVectorMap({
       selector: "#map",
       map: "world",
+      zoomMax: 1, // Set the maximum zoom level to 1 to disable zooming
+      zoomButtons: false, // Disable zoom buttons
       markerStyle: {
         initial: {
           image: "/marker.svg",
@@ -25,14 +30,13 @@ const NetworkMap = () => {
           fill: "yellow",
         },
       },
+
       markerLabelStyle: {
         initial: {
           // Add CSS properties here
-          fill: "#B860AC",
-          fontSize: "1.5rem",
+          fill: "#000",
+          fontSize: "0.875rem",
           fontFamily: "Inter",
-          background: "red",
-          padding: "10rem",
         },
       },
       // Other configuration options for jsvectormap
@@ -73,14 +77,36 @@ const NetworkMap = () => {
       //   map && map.destroy();
     };
   }, []);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      const isMobileDevice = window.innerWidth <= 776;
+
+      console.log("I think this is mobile", isMobileDevice, window.innerWidth); // Adjust the threshold as needed
+      setIsMobile(isMobileDevice);
+    };
+
+    // Initial check on mount
+    checkMobile();
+
+    // Attach a resize event listener to update the state if the viewport changes
+    window.addEventListener("resize", checkMobile);
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+    };
+  }, []);
+
   return (
-    <div className="flex py-16 px-[6.5rem] flex-col justify-center items-center gap-2 bg-dark-green">
-      <div className="flex flex-col items-center gap-8">
-        <Heading2
-          text="Map of Current Members/Clubs/Nodes"
-          className="text-center"
-        />
-        <div id="map" style={{ width: "77rem", height: "42rem" }}></div>
+    <div className="flex py-8 lg:py-16 px-4 lg:px-[6.5rem] flex-col justify-center items-center gap-2 w-full">
+      <div className="flex flex-col items-center gap-8 w-full">
+        <Heading2 text="Map of Our Nodes" className="text-center" />
+        <div className={style["map-container"]}>
+          <div id="map" className={style["jvmap-smart"]}></div>
+        </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import Founders from "@/components/founder";
 import GetInvolved from "@/components/getInvolved";
 import Hero from "@/components/hero";
 import Navigation from "@/components/navigation";
-import NetworkMap from "@/components/networkMap";
+import NetworkMap from "@/components/map/networkMap";
 import Resources from "@/components/resources";
 
 export default function Home() {

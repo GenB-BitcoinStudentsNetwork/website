@@ -1,0 +1,39 @@
+.map-container {
+  width: 22.375rem;
+  height: 13.65906rem;
+}
+
+.jvmap-smart {
+  width: 100%;
+  height: 100%;
+}
+.text-center {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.map-container:after,
+.clearfix {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+@media only screen and (min-width: 576px) {
+  .map-container {
+    width: 23.375rem;
+    height: 13.65906rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .map-container {
+    width: 26.375rem;
+    height: 16.65906rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .map-container {
+    width: 77rem;
+    height: 42rem;
+  }
+}
