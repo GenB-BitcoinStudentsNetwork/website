@@ -9,7 +9,7 @@ interface Props {
 const Heading2 = ({ text, className }: Props) => {
   return (
     <h2
-      className={`font-bold text-[2.5rem] leading-normal text-primary ${grandisBold.className} ${className}`}
+      className={`font-bold text-[1.5rem] lg:text-[2.5rem] leading-normal text-primary ${grandisBold.className} ${className}`}
     >
       {text}
     </h2>
