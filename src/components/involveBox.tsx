@@ -21,8 +21,8 @@ const InvolveBox = ({
   donation,
 }: Props) => {
   return (
-    <div className="flex p-6 flex-col justify-between items-start gap-2 bg-[#FCF5FB] h-[27.0625rem]">
-      <div className="flex flex-col items-start gap-4">
+    <div className="flex p-6 flex-col justify-between items-start gap-2 bg-[#FCF5FB] lg:h-[27.0625rem]">
+      <div className="flex flex-col items-start gap-4 mb-6 lg:mb-0">
         <div className="display items-center justify-center h-[4.5rem] w-[4.5rem]">
           <Image
             src={imagePath}
