@@ -9,14 +9,21 @@ interface Props {
 }
 
 const Modal = ({ isOpen, closeModal, children }: Props) => {
+  const body = document.querySelector("body") as HTMLBodyElement;
+
+  if (isOpen) {
+    body.style.overflow = "hidden";
+  } else {
+    body.style.overflow = "auto";
+  }
   return (
     <>
       {isOpen && (
         <div
-          className="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center"
+          className="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center cursor-pointer"
           onClick={closeModal}
         >
-          <div className="bg-white flex flex-col items-start gap-2 p-8 shadow-md relative rounded-2xl border-[1px] border-solid border-[#E3BFDE]">
+          <div className="bg-white flex flex-col items-start gap-2 p-8 shadow-md relative rounded-2xl border-[1px] border-solid border-[#E3BFDE] cursor-default">
             <button
               onClick={closeModal}
               className="absolute top-[-2rem] right-[-2rem] flex items-center justify-center p-6 bg-primary rounded-[50%] h-[4rem] w-[4rem]"

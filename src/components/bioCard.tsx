@@ -12,6 +12,7 @@ interface Props {
   twitterLink: string;
   linkedinLink: string;
   npub: string;
+  bio: string[];
 }
 
 const BioCard = ({
@@ -22,6 +23,7 @@ const BioCard = ({
   twitterLink,
   linkedinLink,
   npub,
+  bio,
 }: Props) => {
   const [openModal, setOpenModal] = useState(false);
 
@@ -35,7 +37,57 @@ const BioCard = ({
   return (
     <>
       <Modal isOpen={openModal} closeModal={closeModalHandler}>
-        <div>Tobi the bad guy</div>
+        <div className="flex items-center gap-8">
+          <div
+            className={`flex items-center justify-center w-[30rem] h-[33.79213rem]`}
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #B860AC 100%)",
+            }}
+          >
+            <Image
+              src={imagePath}
+              alt={name}
+              className={`object-cover w-[30rem] h-[33.79213rem]`}
+              width={0}
+              height={0}
+              sizes="100vw"
+            />
+          </div>
+          <div className="flex flex-col items-start gap-8 h-[33.79213rem] w-[30rem]">
+            <div className="flex flex-col items-start gap-6">
+              <div className="flex flex-col items-start gap-2">
+                <h3 className="text-black text-2xl font-semibold leading-[150%]">
+                  {name}
+                </h3>
+                <p className="text-black text-base italic leading-[150%]">
+                  {info}
+                </p>
+              </div>
+              <div className="flex flex-col items-start gap-2">
+                <h3 className="text-primary text-xl font-bold leading-[150%]">
+                  Npub
+                </h3>
+                <p className="text-black text-base leading-[150%] break-all">
+                  {npub || "n/a"}
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-2">
+              <h3 className="text-primary text-xl font-bold leading-[150%]">
+                Bio
+              </h3>
+              {/* text-overflow: ellipsis; white-space: nowrap; */}
+              <div className="flex flex-col gap-4 overflow-y-auto h-[16.75rem] w-[30rem]">
+                {bio.map((text: string) => (
+                  <p className="text-black text-base leading-[150%] text-justify w-[29.125rem]">
+                    {text}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </Modal>
       <div className="flex flex-col items-start gap-4">
         <div
