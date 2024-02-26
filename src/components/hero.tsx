@@ -8,11 +8,11 @@ import Image from "next/image";
 const grandis = localFont({ src: "../../static-font/Grandis-Bold.woff2" });
 const Hero = () => {
   return (
-    <div className="flex pt-[14rem] w-full flex-col items-center justify-center gap-2">
-      <div className="flex flex-col items-center w-[67rem] gap-12">
-        <div className="flex flex-col items-center gap-[1.5rem]">
+    <div className="flex pt-8 md:pt-12 lg:pt-[14rem] w-full flex-col items-center justify-center gap-2">
+      <div className="flex flex-col items-center p-4 lg:p-0 lg:w-[67rem] gap-12">
+        <div className="flex flex-col items-center gap-4 lg:gap-[1.5rem]">
           <h1
-            className={`text-black font-bold text-[4rem] text-center leading-[4.6rem] w-[39.4375rem] ${grandis.className}`}
+            className={`text-black font-bold text-[2rem] lg:text-[4rem] text-center leading-[115%] lg:leading-[4.6rem] w-[19.75rem]  lg:w-[39.4375rem] ${grandis.className}`}
           >
             A Network of Student Bitcoiners 
           </h1>

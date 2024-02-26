@@ -25,16 +25,16 @@ const PrimaryButton = ({ text, disabled, link }: Props) => {
             scrollToSection(link);
           }}
           href={`#${link}`}
-          className={`py-[1.5rem] px-[2rem] ${
+          className={`py-4 px-6 lg:py-[1.5rem] lg:px-[2rem] ${
             disabled ? "bg-[#4E444D;]" : "bg-primary"
-          } text-white rounded-lg text-base font-semibold font-sans leading-normal gap-[0.5rem]`}
+          } text-white rounded-lg text-sm lg:text-base font-semibold font-sans leading-normal gap-[0.5rem]`}
         >
           {text}
         </Link>
       ) : (
         <button
           disabled={disabled}
-          className={`py-[1.5rem] px-[2rem] ${
+          className={`py-4 px-6 lg:py-[1.5rem] lg:px-[2rem] ${
             disabled ? "bg-[#4E444D;]" : "bg-primary"
           } text-white rounded-lg text-base font-semibold font-sans leading-normal gap-[0.5rem]`}
         >

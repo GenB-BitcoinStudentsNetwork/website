@@ -36,7 +36,7 @@ const Navigation = () => {
   return (
     <nav
       className={`w-full flex-col p-4 md:p-8 lg:px-[6.5rem] lg:pt-[1.5625rem] top-0 lg:pb-[1.5rem] bg-white z-1 flex ${
-        isActive ? "h-screen" : "sticky"
+        isActive ? "h-screen" : "h-auto sticky"
       }`}
       style={{ boxShadow: "0px 2px 0px 0px rgba(0, 7, 47, 0.10)" }}
     >
