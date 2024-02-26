@@ -29,7 +29,7 @@ const NetworkMap = () => {
         initial: {
           // Add CSS properties here
           fill: "#B860AC",
-          fontSize: "1.575rem",
+          fontSize: "1.5rem",
           fontFamily: "Inter",
           background: "red",
           padding: "10rem",
@@ -38,17 +38,23 @@ const NetworkMap = () => {
       // Other configuration options for jsvectormap
       markers: [
         {
-          name: "Egypt",
-          coords: [26.8206, 30.8025],
-        },
-        {
-          name: "United Kingdom",
+          name: "UK",
           coords: [55.3781, 3.436],
         },
         {
           name: "United States",
           coords: [37.0902, -95.7129],
         },
+        { name: "Canada", coords: [45.4215, -75.6994] },
+        { name: "Japan", coords: [35.6895, 139.6917] },
+        { name: "Mexico", coords: [19.4326, -99.1332] },
+        { name: "Italy", coords: [41.9028, 12.4964] },
+        { name: "Brazil", coords: [-15.7801, -47.9292] },
+        { name: "Spain", coords: [40.4168, -3.7038] },
+        { name: "Australia", coords: [-35.2809, 149.13] },
+        { name: "Ghana", coords: [5.6037, -0.187] },
+        { name: "South Korea", coords: [37.5665, 126.978] },
+        { name: "Taiwan", coords: [25.033, 121.5654] },
       ],
       labels: {
         markers: {
