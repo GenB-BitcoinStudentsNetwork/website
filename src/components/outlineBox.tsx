@@ -6,19 +6,20 @@ interface Props {
   text: string;
   children: ReactNode;
   className: string;
+  network?: boolean;
 }
-const OutlineBox = ({ height, children, text, className }: Props) => {
+const OutlineBox = ({ height, children, text, className, network }: Props) => {
   return (
     <div
-      className={`flex p-4 lg:p-6 flex-col items-start gap-2 rounded-lg border-[1px] border-solid border-[#E3BFDE] ${
-        height ? "lg:h-[14rem] bg-dark-green" : "lg:h-[12.5rem] bg-white"
+      className={`flex p-4 lg:p-6 flex-col items-start gap-2 rounded-lg bg-transparent border-[1px] border-solid border-[#E3BFDE] ${
+        height ? "lg:h-[14rem]" : "lg:h-[12.5rem]"
       }`}
     >
       <div className="flex flex-col gap-4 items-start">
         {children}
         <p
           className={`text-black text-base font-normal leading-[1.5rem] ${
-            height ? "text-white" : ""
+            height && network ? "text-black" : height ? "text-white" : ""
           } ${className}`}
         >
           {text}

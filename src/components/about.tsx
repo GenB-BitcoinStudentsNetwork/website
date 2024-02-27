@@ -39,9 +39,10 @@ const About = () => {
             The Bitcoin Students Network is a{" "}
             <span className="font-bold">“one-stop shop”</span> for students
             interested in learning about Bitcoin and contributing to the space.
-            We aim to connect students to resources (logistical, educational &
-            financial), opportunities (educational, job & skills-based), and
-            importantly, <span className="font-bold">to each other</span>.
+            We aim to <span className="font-bold">connect students</span> to
+            resources (logistical, educational & financial), opportunities
+            (educational, job & skills-based), and importantly,{" "}
+            <span className="font-bold">to each other</span>.
           </p>
           <div className="flex flex-col items-center gap-4">
             <h2
@@ -130,26 +131,26 @@ const About = () => {
             <Heading2 text="Our Vision" />
             <div className="flex flex-col w-full lg:w-[28.8125rem]">
               <p className="text-black text-sm lg:text-base text-justify leading-[150%] font-normal">
-                We aim to strengthen Layer 0, the social/human layer of bitcoin.
-                This network of students and clubs will act as a point of
+                We aim to strengthen Layer 0, the social/human layer of Bitcoin.
+                This Network of students and clubs will act as a point of
                 contact between students and the Bitcoin industry (developers,
-                companies, evangelists/educators, investors, etc.) and will
-                enhance the foundation of new student groups and clubs across
-                the world. It will be beneficial not only for students who will
-                more easily find contacts in the space for advisory, but also
-                for companies and projects in the space as they’ll have a pool
-                of talented, educated students to recruit from and be able to
-                offer opportunities to.
+                companies, evangelists/educators, investors, etc.), and it will
+                enhance the foundation of new student groups and clubs
+                worldwide. It will be beneficial not only for students who will
+                more easily find contacts in the space for connection and
+                advisory, but also for companies and projects in the space as
+                they'll have a pool of talented, educated students to recruit
+                from and be able to offer opportunities to.
               </p>
               <p className="text-black text-base text-justify leading-[150%] font-normal mt-6">
                 We believe that sharing resources and knowledge can enhance the
                 activities of individual clubs and make them more efficient
-                while maintaining their independence. This will benefit their
-                members, universities and Bitcoin companies, as well as the
-                development and adoption of this technology in general. We want
-                to fill the gap that plagues academic pathways concerning
-                learning the skills needed to work in Bitcoin and facilitate the
-                meeting between students and companies.
+                while maintaining their independence. These resources will
+                benefit their members, universities, and Bitcoin companies, as
+                well as the development and adoption of this technology in
+                general. We want to fill the gap that plagues academic pathways
+                concerning learning the skills needed to work in Bitcoin and
+                facilitate meetings between students and companies.
               </p>
             </div>
           </div>
@@ -171,7 +172,7 @@ const About = () => {
             <div className="flex flex-col items-start gap-6">
               <Heading2 text="Core Values" />
               <p className="text-black text-base text-justify leading-[150%] font-normal w-full lg:w-[35.3125rem]">
-                We are a peer-to-peer network that is decentralized, but not
+                We are a peer-to-peer network that is decentralized but not
                 disorganized. We have a founding team, an (industry) Board of
                 Advisors, and a (student) Board of Advisors.
               </p>
@@ -239,7 +240,7 @@ const About = () => {
                 <StepCount step="2" />
               </OutlineBox>
               <OutlineBox
-                text="Each node works on doing their proof-of-work for its club/community"
+                text="Each node works on doing its proof-of-work for its club/community"
                 className="w-full lg:w-[15.125rem]"
               >
                 <StepCount step="3" />
@@ -249,20 +250,26 @@ const About = () => {
 
           <div className="flex flex-col lg:flex-row items-start gap-6">
             <OutlineBox
-              text="When a node does their proof-of-work, it broadcasts their efforts to all nodes"
+              text="When a node does its proof-of-work, it broadcasts its efforts to all nodes."
               className="w-full lg:w-[15.125rem]"
+              height="14rem"
+              network={true}
             >
               <StepCount step="4" />
             </OutlineBox>
             <OutlineBox
-              text="Nodes accept the work only if all resources & opportunities in it are valid and useful to them"
+              text="Nodes accept the work only if all resources & opportunities in it are valid and valuable to them. "
               className="w-full lg:w-[15.125rem]"
+              height="14rem"
+              network={true}
             >
               <StepCount step="5" />
             </OutlineBox>
             <OutlineBox
-              text="The founders & board express their acceptance of the nodes’ work by providing funding to them and continuing to work] on creating the next club/community in the network and growing the it’s resources for all. "
+              text="The founders & board express their acceptance of the nodes' work by providing funding to them and continuing to work on creating the next club/ community in the Network and growing the Network's resources for all. "
               className="w-full lg:w-[34.75rem]"
+              height="14rem"
+              network={true}
             >
               <StepCount step="6" />
             </OutlineBox>

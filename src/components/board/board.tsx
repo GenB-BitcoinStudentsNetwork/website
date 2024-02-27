@@ -16,7 +16,7 @@ const Board = () => {
               <BioCard
                 imagePath="/jeff.png"
                 name="Jeff Booth"
-                info="Entrepreneur, Technology Leader, General Partner at egodeath.capital"
+                info="Entrepreneur, Technology Leader, General Partner at egodeath.capital, and Best Selling Author"
                 twitterLink="https://twitter.com/JeffBooth"
                 linkedinLink="https://www.linkedin.com/in/jeffdbooth/?originalSubdomain=ca"
                 npub="npub1s05p3ha7en49dv8429tkk07nnfa9pcwczkf5x5qrdraqshxdje9sq6eyhe"
