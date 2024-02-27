@@ -26,12 +26,12 @@ const SecondaryButton = ({ text, link }: Props) => {
             scrollToSection(link);
           }}
           href={`#${link}`}
-          className="bg-white text-primary gap-[0.5rem] py-4 px-6 lg:py-[1.5rem] lg:px-[2rem] rounded-lg border-[1px] border-solid border-primary text-sm lg:text-base font-sans font-semibold leading-normal"
+          className="bg-white text-primary gap-[0.5rem] py-4 px-6 lg:py-[1.5rem] lg:px-[2rem] rounded-lg border-[1px] border-solid border-primary text-sm lg:text-base font-sans font-semibold leading-normal hover:bg-dark-green hover:text-white hover:border-dark-green"
         >
           {text}
         </Link>
       ) : (
-        <button className="bg-white text-primary gap-[0.5rem] py-4 px-6 lg:py-[1.5rem] lg:px-[2rem] rounded-lg border-[1px] border-solid border-primary text-sm lg:text-base font-sans font-semibold leading-normal">
+        <button className="bg-white text-primary gap-[0.5rem] py-4 px-6 lg:py-[1.5rem] lg:px-[2rem] rounded-lg border-[1px] border-solid border-primary text-sm lg:text-base font-sans font-semibold leading-normal hover:bg-dark-green hover:text-white hover:border-dark-green">
           {text}
         </button>
       )}

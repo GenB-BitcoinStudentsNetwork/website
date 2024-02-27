@@ -153,7 +153,7 @@ const BioCard = ({
                 founder
                   ? "py-2 px-4 text-base"
                   : "py-[0.33238rem] px-[0.66475rem] lg:py-2 lg:px-4 text-[0.66475rem] lg:text-base"
-              } gap-2 border-primary border-solid border-[1px] rounded text-primary font-semibold leading-normal`}
+              } gap-2 border-primary border-solid border-[1px] rounded text-primary font-semibold leading-normal hover:bg-dark-green hover:text-white hover:border-dark-green `}
             >
               Show bio
             </button>

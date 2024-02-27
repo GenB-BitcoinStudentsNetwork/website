@@ -63,7 +63,7 @@ const Navigation = () => {
             scrollToSection("get-involved");
           }}
           href={"#get-involved"}
-          className="bg-primary text-white px-[1.2rem] py-[0.875rem] rounded-lg gap-2 hidden lg:flex"
+          className="bg-primary hover:bg-dark-green text-white px-[1.2rem] py-[0.875rem] rounded-lg gap-2 hidden lg:flex"
         >
           Get Involved
         </Link>
