@@ -1,5 +1,6 @@
 "use client";
-import React, { ReactNode } from "react";
+
+import React, { ReactNode, useEffect } from "react";
 import Image from "next/image";
 
 interface Props {
@@ -9,13 +10,15 @@ interface Props {
 }
 
 const Modal = ({ isOpen, closeModal, children }: Props) => {
-  const body = document.querySelector("body") as HTMLBodyElement;
+  useEffect(() => {
+    const body = document.querySelector("body") as HTMLBodyElement;
 
-  if (isOpen) {
-    body.style.overflow = "hidden";
-  } else {
-    body.style.overflow = "auto";
-  }
+    if (isOpen) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "auto";
+    }
+  });
   return (
     <>
       {isOpen && (

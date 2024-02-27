@@ -41,8 +41,4 @@ const Founders = () => {
   );
 };
 
-// display: flex;
-// align-items: flex-start;
-// gap: 4.5rem;
-
 export default Founders;

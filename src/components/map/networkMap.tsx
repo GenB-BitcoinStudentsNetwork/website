@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 // @ts-ignore
 import jsVectorMap from "jsvectormap";
 import "jsvectormap/dist/maps/world";
@@ -142,7 +140,7 @@ const NetworkMap = () => {
 
     // Clean up the map instance when the component is unmounted
     return () => {
-      // map && map.destroy();
+      map && map.destroy();
     };
   }, []);
 

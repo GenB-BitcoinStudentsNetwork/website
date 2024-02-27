@@ -77,7 +77,6 @@ const BioCard = ({
               <h3 className="text-primary text-base lg:text-xl font-bold leading-[150%]">
                 Bio
               </h3>
-              {/* text-overflow: ellipsis; white-space: nowrap; */}
               <div className="flex flex-col gap-4 overflow-y-auto h-[10.53031rem] w-[18.86031rem] lg:h-[16.75rem] lg:w-[30rem]">
                 {bio.map((text: string) => (
                   <p
