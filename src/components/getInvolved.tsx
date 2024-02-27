@@ -29,7 +29,7 @@ const GetInvolved = () => {
             imagePath="/donation.svg"
             text="Donate to help the network grow and foster a great community of students bitcoiners."
             className="w-full lg:w-[18.75rem]"
-            buttonText="Donate via Bitcoin"
+            buttonText="Donate with BTCPAY"
             donation
           />
         </div>
