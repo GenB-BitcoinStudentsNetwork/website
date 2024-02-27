@@ -80,18 +80,13 @@ const Footer = () => {
               className="text-white text-sm"
             />
             <NavMenu
-              name="Our Founders"
-              sectionName="founders"
-              className="text-white text-sm"
-            />
-            <NavMenu
               name="Advisory Board"
               sectionName="board"
               className="text-white text-sm"
             />
             <NavMenu
-              name="Resources"
-              sectionName="resources"
+              name="Our Network"
+              sectionName="network"
               className="text-white text-sm"
             />
           </div>
