@@ -191,7 +191,7 @@ const About = () => {
             </h3>
             <div className="flex flex-col items-start gap-6">
               <Value
-                heading="Freedom through knowledge"
+                heading="Freedom Through Knowledge"
                 text="Individuals' freedom is the most important thing and we believe that to obtain freedom, knowledge is essential. Based on this consideration, we focus on Bitcoin education to teach students why it's time to build a more inclusive, truthful, and honest world."
               />
               <Value

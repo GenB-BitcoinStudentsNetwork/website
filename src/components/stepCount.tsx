@@ -1,4 +1,5 @@
-import { grandisBold, grandisRegular } from "@/font/grandis";
+"use client";
+import { grandisRegular } from "@/font/grandis";
 
 interface Props {
   step: string;
