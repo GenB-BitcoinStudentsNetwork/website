@@ -12,6 +12,11 @@
   font-weight: 300;
   font-size: 2rem;
 }
+
+.jvm-marker {
+  font-size: 0.875rem; /* Set your default marker size */
+}
+
 .map-container:after,
 .clearfix {
   display: block;
@@ -30,10 +35,16 @@
     width: 26.375rem;
     height: 16.65906rem;
   }
+  .jvm-marker {
+    font-size: 0.875rem; /* Set your default marker size */
+  }
 }
 @media only screen and (min-width: 992px) {
   .map-container {
     width: 77rem;
     height: 42rem;
+  }
+  .jvm-marker {
+    font-size: 0.875rem; /* Set your default marker size */
   }
 }
