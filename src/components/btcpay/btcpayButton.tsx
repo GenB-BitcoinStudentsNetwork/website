@@ -23,7 +23,7 @@ const BtcPayButton = () => {
         name="submit"
         value={"Donate with BTCPAY"}
         alt="Pay with BTCPay Server, a Self-Hosted Bitcoin Payment Processor"
-        className={`py-[1.5rem] px-[2rem] bg-primary text-white rounded-lg text-base font-semibold font-sans leading-normal gap-[0.5rem] cursor-pointer`}
+        className={`py-[1.5rem] px-[2rem] bg-primary text-white rounded-lg text-base font-semibold font-sans leading-normal gap-[0.5rem] cursor-pointer hover:bg-dark-green hover:text-white`}
       />
     </form>
   );
