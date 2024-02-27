@@ -11,6 +11,52 @@ import Heading2 from "../heading2";
 import style from "./map.module.css";
 
 const NetworkMap = () => {
+  const paragraph = (value: string, lastElement: boolean) => {
+    const borderBottom = lastElement ? "" : "border-bottom: 1px solid #FFF;";
+    const styles = `"padding: 0.7rem 0; ${borderBottom}"`;
+    return `<p style=${styles}>${value}</p>`;
+  };
+
+  const contructUniversities = (marker: string) => {
+    const universities = universitiesMarker[marker];
+    let displayUni = "";
+    for (let i = 0; i < universities.length; i++) {
+      const para = paragraph(universities[i], universities.length - 1 === i);
+      displayUni = `${displayUni}${para}`;
+    }
+    return displayUni;
+  };
+
+  const universitiesMarker: { [key: string]: string[] } = {
+    UK: [""],
+    "United States": [
+      "University of New Hampshire",
+      "Cornell University",
+      "Michigan State University",
+      "Vanderbilt University",
+      "University of Chicago",
+      "Carnegie Mellon University",
+      "University of Illinois Urbana-Champaign",
+      "Purdue University",
+      "University of California, Berkeley",
+      "Georgetown University",
+      "Virginia Commonwealth University",
+      "Harvard University",
+      "University of California, Los Angeles",
+      "University of Texas at Austin",
+    ],
+    Canada: ["University of Victoria"],
+    Japan: ["Hitotsubashi University", "Sophia University"],
+    Mexico: ["Instituto Tecnológico Autónomo de México"],
+    Italy: ["Politecnico di Milano"],
+    Brazil: ["Clube Bitcoin São Paulo"],
+    Spain: ["European Bitcoiners"],
+    Australia: ["University of New South Wales"],
+    Ghana: ["University of Ghana"],
+    "South Korea": ["Keimyung University"],
+    Taiwan: ["Fo Guang University"],
+  };
+
   useEffect(() => {
     const map = new jsVectorMap({
       selector: "#map",
@@ -38,7 +84,20 @@ const NetworkMap = () => {
           fill: "yellow",
         },
       },
-
+      // @ts-ignore
+      onMarkerTooltipShow(event, tooltip, code) {
+        tooltip.css({
+          backgroundColor: "#F1E5F1",
+          color: "black",
+          fontFamily: "Inter",
+          padding: "0px",
+          borderRadius: "0.5rem",
+        });
+        tooltip.text(
+          contructUniversities(tooltip.text()),
+          true // Enables HTML
+        );
+      },
       markerLabelStyle: {
         initial: {
           // Add CSS properties here
@@ -83,29 +142,7 @@ const NetworkMap = () => {
 
     // Clean up the map instance when the component is unmounted
     return () => {
-      //   map && map.destroy();
-    };
-  }, []);
-
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => {
-      const isMobileDevice = window.innerWidth <= 776;
-
-      console.log("I think this is mobile", isMobileDevice, window.innerWidth); // Adjust the threshold as needed
-      setIsMobile(isMobileDevice);
-    };
-
-    // Initial check on mount
-    checkMobile();
-
-    // Attach a resize event listener to update the state if the viewport changes
-    window.addEventListener("resize", checkMobile);
-
-    // Clean up the event listener when the component is unmounted
-    return () => {
-      window.removeEventListener("resize", checkMobile);
+      // map && map.destroy();
     };
   }, []);
 

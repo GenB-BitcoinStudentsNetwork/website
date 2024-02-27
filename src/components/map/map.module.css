@@ -13,10 +13,6 @@
   font-size: 2rem;
 }
 
-.jvm-marker {
-  font-size: 0.875rem; /* Set your default marker size */
-}
-
 .map-container:after,
 .clearfix {
   display: block;
