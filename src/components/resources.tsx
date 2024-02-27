@@ -38,6 +38,7 @@ const Resources = () => {
           />
         </div>
         <PrimaryButton disabled={true} text="Coming soon!" />
+        <div id="founders" />
       </div>
     </div>
   );

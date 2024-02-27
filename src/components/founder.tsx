@@ -35,6 +35,7 @@ const Founders = () => {
             ]}
           />
         </div>
+        <div id="board" />
       </div>
     </div>
   );

@@ -169,6 +169,7 @@ const Board = () => {
             </BoardDepartment>
           </BoardLayout>
         </div>
+        <div id="network" />
       </div>
     </div>
   );

@@ -16,24 +16,12 @@ export default function Home() {
       <div id="home">
         <Hero />
       </div>
-      <div id="about">
-        <About />
-      </div>
-      <div id="get-involved">
-        <GetInvolved />
-      </div>
-      <div id="resources">
-        <Resources />
-      </div>
-      <div id="founders">
-        <Founders />
-      </div>
-      <div id="board">
-        <Board />
-      </div>
-      <div id="network">
-        <NetworkMap />
-      </div>
+      <About />
+      <GetInvolved />
+      <Resources />
+      <Founders />
+      <Board />
+      <NetworkMap />
       <div>
         <Footer />
       </div>

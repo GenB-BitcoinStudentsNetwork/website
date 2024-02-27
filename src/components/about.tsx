@@ -274,6 +274,7 @@ const About = () => {
               <StepCount step="6" />
             </OutlineBox>
           </div>
+          <div id="get-involved" />
         </div>
       </div>
     </div>

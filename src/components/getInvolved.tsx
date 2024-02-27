@@ -34,6 +34,7 @@ const GetInvolved = () => {
           />
         </div>
       </div>
+      <div id="resources" />
     </div>
   );
 };
