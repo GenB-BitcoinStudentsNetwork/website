@@ -6,8 +6,14 @@ import Founders from "@/components/founder";
 import GetInvolved from "@/components/getInvolved";
 import Hero from "@/components/hero";
 import Navigation from "@/components/navigation";
-import NetworkMap from "@/components/map/networkMap";
+// import NetworkMap from "@/components/map/networkMap";
 import Resources from "@/components/resources";
+
+import dynamic from "next/dynamic";
+
+const NetworkMap = dynamic(() => import("../components/map/networkMap"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
