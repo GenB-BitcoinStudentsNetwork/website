@@ -60,9 +60,9 @@ const NetworkMap = () => {
       selector: "#map",
       map: "world",
       regionStyle: {
-        initial: {
-          fill: "#004915",
-        },
+        // initial: {
+        //   fill: "#004915",
+        // },
         hover: {
           fill: "#A0D1DC",
         },
@@ -99,7 +99,7 @@ const NetworkMap = () => {
       markerLabelStyle: {
         initial: {
           // Add CSS properties here
-          fill: "#fff",
+          fill: "#000",
           fontSize: "0.75rem",
           fontFamily: "Inter",
           fontWeight: "normal",
