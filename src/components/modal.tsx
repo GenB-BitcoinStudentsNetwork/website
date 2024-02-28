@@ -19,6 +19,12 @@ const Modal = ({ isOpen, closeModal, children }: Props) => {
       body.style.overflow = "auto";
     }
   });
+
+  function handleInnerBoxClick(
+    e: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) {
+    e.stopPropagation();
+  }
   return (
     <>
       {isOpen && (
@@ -26,7 +32,10 @@ const Modal = ({ isOpen, closeModal, children }: Props) => {
           className="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center cursor-pointer z-50"
           onClick={closeModal}
         >
-          <div className="bg-white flex flex-col items-start gap-2 p-[1.25738rem] lg:p-8 shadow-md relative rounded-2xl border-[1px] border-solid border-[#E3BFDE] cursor-default">
+          <div
+            onClick={handleInnerBoxClick}
+            className="bg-white flex flex-col items-start gap-2 p-[1.25738rem] lg:p-8 shadow-md relative rounded-2xl border-[1px] border-solid border-[#E3BFDE] cursor-default"
+          >
             <button
               onClick={closeModal}
               className="absolute top-[-1.25738rem] right-[-1.25738rem] lg:top-[-2rem] lg:right-[-2rem] flex items-center justify-center p-[0.943rem] lg:p-6 bg-primary rounded-[50%] h-[2.51471rem] w-[2.51471rem] lg:h-[4rem] lg:w-[4rem]"
