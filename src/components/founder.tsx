@@ -18,7 +18,9 @@ const Founders = () => {
             linkedinLink="https://www.linkedin.com/in/arsh-molu-b35783206/"
             npub="npub1wlkfvm7dvnusz9fv44wuwucu0jp3lc3wqt36ax0lz33hukjga7wq6hqwhy"
             bio={[
-              "Arsh works at the Human Rights Foundation and is also the co-founder of Generation Bitcoin and the Bitcoin Students Network. Arsh is passionate about freedom, economics, and philosophy.",
+              [
+                "Arsh works at the Human Rights Foundation and is also the co-founder of Generation Bitcoin and the Bitcoin Students Network. Arsh is passionate about freedom, economics, and philosophy.",
+              ],
             ]}
           />
           <BioCard
@@ -30,8 +32,12 @@ const Founders = () => {
             linkedinLink="https://www.linkedin.com/in/ella-hough/"
             npub="npub1z5umqa38xfv94y3fpver2khw2qar2v54jetl24939j4f0yyhggdqrh5lwd"
             bio={[
-              "Ella believes the 21,000,000 bitcoin are humanity’s tools for the 21st century. Pursuing a Bitcoin-focused study at Cornell University, she studies the dynamics of Bitcoin’s diffusion through society.",
-              "Ella is the founder of the Cornell Bitcoin Club, Project Lead at Generation Bitcoin, co-founder of the Bitcoin Students Network, author of the Bitcoin “quick start” blog, Sats Chats, and contributor to Bitcoin Magazine. Previously, Ella worked at IBM, where she managed STEM learning experiences for 75k+ students.",
+              [
+                "Ella believes the 21,000,000 bitcoin are humanity’s tools for the 21st century. Pursuing a Bitcoin-focused study at Cornell University, she studies the dynamics of Bitcoin’s diffusion through society.",
+              ],
+              [
+                "Ella is the founder of the Cornell Bitcoin Club, Project Lead at Generation Bitcoin, co-founder of the Bitcoin Students Network, author of the Bitcoin “quick start” blog, Sats Chats, and contributor to Bitcoin Magazine. Previously, Ella worked at IBM, where she managed STEM learning experiences for 75k+ students.",
+              ],
             ]}
           />
         </div>

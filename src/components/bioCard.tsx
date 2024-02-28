@@ -12,7 +12,7 @@ interface Props {
   twitterLink: string;
   linkedinLink: string;
   npub: string;
-  bio: string[];
+  bio: Array<Array<string | { text: string; href: string }>>;
 }
 
 const BioCard = ({
@@ -33,6 +33,21 @@ const BioCard = ({
 
   const openModalHandler = () => {
     setOpenModal(true);
+  };
+
+  const formatBioText = (
+    paragraph: Array<string | { text: string; href: string }>
+  ) => {
+    let text = ``;
+    for (let i = 0; i < paragraph.length; i++) {
+      const value = paragraph[i];
+      if (typeof value === "string") {
+        text = `${text}${value}`;
+      } else {
+        text = `${text}<a style="color: #0075FF; text-decoration: underline;" href="${value.href}" target="_blank">${value.text}</a>`;
+      }
+    }
+    return text;
   };
   return (
     <>
@@ -78,13 +93,15 @@ const BioCard = ({
                 Bio
               </h3>
               <div className="flex flex-col gap-4 overflow-y-auto h-[10.53031rem] w-[18.86031rem] lg:h-[16.75rem] lg:w-[30rem]">
-                {bio.map((text: string) => (
+                {/* <div dangerouslySetInnerHTML={{ __html: sanitizedHTML || '' }} /> */}
+                {bio.map((bioParagraph, id) => (
                   <p
                     className="text-black text-sm lg:text-base leading-[150%] text-justify w-[w-[18.31019rem]] lg:w-[29.125rem]"
-                    key={text}
-                  >
-                    {text}
-                  </p>
+                    key={id}
+                    dangerouslySetInnerHTML={{
+                      __html: formatBioText(bioParagraph),
+                    }}
+                  />
                 ))}
               </div>
             </div>
