@@ -49,12 +49,12 @@ const Footer = () => {
           <div className="flex items-center justify-center gap-2">
             <SocialLink
               imagePath="/dark_twitter.svg"
-              link="https://twitter.com/genbitcoiners"
+              link="https://x.com/btcstudents?s=21&t=IxybiNgN9ZpCC2NRLPEURQ"
               name="twitter"
             />
             <SocialLink
               imagePath="/blue_linkedin.svg"
-              link=""
+              link="https://www.linkedin.com/company/generation-bitcoin/"
               name="linkedin"
             />
             <SocialLink
