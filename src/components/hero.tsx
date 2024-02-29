@@ -17,7 +17,7 @@ const Hero = () => {
             A Network of Student Bitcoiners 
           </h1>
           <div className="flex justify-center items-start gap-[1.5rem]">
-            <PrimaryButton text="Get Involved" link="get-involved" />
+            <PrimaryButton text="Get Involved" link="#get-involved" />
             <SecondaryButton text="See Our Resources" link="resources" />
           </div>
         </div>

@@ -10,6 +10,7 @@ interface Props {
   heading: string;
   buttonText: string;
   donation?: boolean;
+  href?: string;
 }
 
 const InvolveBox = ({
@@ -19,6 +20,7 @@ const InvolveBox = ({
   text,
   className,
   donation,
+  href,
 }: Props) => {
   return (
     <div className="flex p-6 flex-col justify-between items-start gap-2 bg-[#FCF5FB] lg:h-[27.0625rem]">
@@ -44,7 +46,11 @@ const InvolveBox = ({
           </p>
         </div>
       </div>
-      {donation ? <BtcPayButton /> : <PrimaryButton text={buttonText} />}
+      {donation ? (
+        <BtcPayButton />
+      ) : (
+        <PrimaryButton link={href} text={buttonText} />
+      )}
     </div>
   );
 };

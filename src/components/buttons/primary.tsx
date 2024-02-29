@@ -21,10 +21,13 @@ const PrimaryButton = ({ text, disabled, link }: Props) => {
       {link ? (
         <Link
           onClick={(e) => {
-            e.preventDefault();
-            scrollToSection(link);
+            if (link.startsWith("#")) {
+              e.preventDefault();
+              scrollToSection(link.substring(1));
+            }
           }}
-          href={`#${link}`}
+          target={`${link.startsWith("#") ? "" : "_blank"}`}
+          href={`${link}`}
           className={`py-4 px-6 lg:py-[1.5rem] lg:px-[2rem] ${
             disabled ? "bg-[#4E444D;]" : "bg-primary hover:bg-dark-green"
           } text-white rounded-lg text-sm lg:text-base font-semibold font-sans leading-normal gap-[0.5rem]`}

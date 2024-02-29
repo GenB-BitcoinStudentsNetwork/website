@@ -16,6 +16,7 @@ const GetInvolved = () => {
             text="Organize/speak on a panel, host a Twitter space, provide financial sponsorship (goes through GenB), donate books, equipment, resources, etc., offer mentorship and expertise, share internship and job opportunities, lead workshops and training, offer networking opportunities, brainstorm collaborative projects…anything you can think of"
             className="w-full lg:w-[24.25rem]"
             buttonText="Get Started"
+            href="https://form.typeform.com/to/mb4HufnC"
           />
           <InvolveBox
             heading="Students"
@@ -23,6 +24,7 @@ const GetInvolved = () => {
             text="Join the Network! Fill out the form below to become a node, receive support in starting or growing your University's Bitcoin Club, and access educational/ job opportunities. Or, to simply connect with other Bitcoiners"
             className="w-full lg:w-[18.75rem]"
             buttonText="Join Here"
+            href="https://form.typeform.com/to/D36UrIs8"
           />
           <InvolveBox
             heading="Donate"
