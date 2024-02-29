@@ -42,32 +42,36 @@ const Navigation = () => {
       style={{ boxShadow: "0px 2px 0px 0px rgba(0, 7, 47, 0.10)" }}
     >
       <div className="flex justify-between items-center w-full">
-        <Link
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToSection("home");
-          }}
-          href="/"
-          className="flex items-center gap-1 lg:gap-3"
-        >
-          <Image
-            src={"/logo.svg"}
-            height={0}
-            width={0}
-            sizes="100vw"
-            alt={"Logo"}
-            className="w-[2.97144rem] h-[1.6875rem] lg:w-[5.17256rem] lg:h-[2.9375rem]"
-          />
+        <div className="flex items-center gap-1 lg:gap-3">
+          <Link
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("home");
+            }}
+            href="/"
+          >
+            <Image
+              src={"/logo.svg"}
+              height={0}
+              width={0}
+              sizes="100vw"
+              alt={"Logo"}
+              className="w-[2.97144rem] h-[1.6875rem] lg:w-[5.17256rem] lg:h-[2.9375rem]"
+            />
+          </Link>
           <div className="bg-black w-[0.0625rem] h-[1.6875rem]  lg:w-[0.0625rem] lg:h-[2.9375rem]" />
-          <Image
-            src={"/genb_logo.png"}
-            height={0}
-            width={0}
-            sizes="100vw"
-            alt={"Logo"}
-            className="w-[2.97144rem] h-[1.375rem] lg:w-[5.0625rem] lg:h-[2.1875rem]"
-          />
-        </Link>
+          <Link target="_blank" href="https://www.genbitcoin.org/">
+            <Image
+              src={"/genb_logo.png"}
+              height={0}
+              width={0}
+              sizes="100vw"
+              alt={"Logo"}
+              className="w-[2.97144rem] h-[1.375rem] lg:w-[5.0625rem] lg:h-[2.1875rem]"
+            />
+          </Link>
+        </div>
+
         <div className="items-start gap-[2.5rem] hidden lg:inline-flex">
           <NavMenu name="About Us" sectionName="about" />
           <NavMenu name="Advisory Board" sectionName="board" />
