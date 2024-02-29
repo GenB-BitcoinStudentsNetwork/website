@@ -12,6 +12,7 @@ interface Props {
   twitterLink: string;
   linkedinLink: string;
   npub: string;
+  biocardInfo?: string;
   bio: Array<Array<string | { text: string; href: string }>>;
 }
 
@@ -24,6 +25,7 @@ const BioCard = ({
   linkedinLink,
   npub,
   bio,
+  biocardInfo,
 }: Props) => {
   const [openModal, setOpenModal] = useState(false);
 
@@ -76,7 +78,7 @@ const BioCard = ({
                   {name}
                 </h3>
                 <p className="text-black text-sm lg:text-base italic leading-[150%]">
-                  {info}
+                  {biocardInfo ? biocardInfo : info}
                 </p>
               </div>
               <div className="flex flex-col items-start gap-[0.31431rem] lg:gap-2">

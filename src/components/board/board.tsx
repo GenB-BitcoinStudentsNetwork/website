@@ -17,6 +17,7 @@ const Board = () => {
                 imagePath="/jeff.png"
                 name="Jeff Booth"
                 info="Entrepreneur, Technology Leader, General Partner at egodeath.capital, and Best Selling Author"
+                biocardInfo="Entrepreneur, Technology Leader, General Partner at egodeath.capital and Best Selling Author of The Price of Tomorrow: Why Deflation is Key to an Abundant Future"
                 twitterLink="https://twitter.com/JeffBooth"
                 linkedinLink="https://www.linkedin.com/in/jeffdbooth/?originalSubdomain=ca"
                 npub="npub1s05p3ha7en49dv8429tkk07nnfa9pcwczkf5x5qrdraqshxdje9sq6eyhe"
