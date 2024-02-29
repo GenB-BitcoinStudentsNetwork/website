@@ -140,7 +140,7 @@ const NetworkMap = () => {
 
     // Clean up the map instance when the component is unmounted
     return () => {
-      // map && map.destroy();
+      map && map.destroy();
     };
   }, []);
 
