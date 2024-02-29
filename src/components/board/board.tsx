@@ -69,7 +69,7 @@ const Board = () => {
               <BioCard
                 imagePath="/michael.png"
                 name="Michael Rihani"
-                info="Bitcoin Product Lead Cash App at Block"
+                info="Bitcoin Product Lead, Cash App at Block"
                 twitterLink="https://twitter.com/michaelrihani"
                 linkedinLink="https://www.linkedin.com/in/michaelrihani/"
                 npub="npub1zvrwm4n0rk3hftwyzl8csjaulatuvwvk2c3kc8u89mssgq7qrvks5zvf63"
@@ -228,7 +228,7 @@ const Board = () => {
               <BioCard
                 imagePath="/d.png"
                 name="D++"
-                info="Bitcoin Professor | Revolutionary Cypherpunk"
+                info="Founder of Entropy"
                 twitterLink="https://twitter.com/d_plus__plus"
                 linkedinLink=""
                 npub="npub1337xxyne0pw52zgd984xqqs2q7qhqpt7phhn7xp6t9yt406vrvescdpkdt"
