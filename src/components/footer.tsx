@@ -1,6 +1,7 @@
 "use client";
 import { grandisBold } from "@/font/grandis";
 import Image from "next/image";
+import Link from "next/link";
 import NavMenu from "./navMenu";
 import SocialLink from "./socialLink";
 
@@ -64,16 +65,22 @@ const Footer = () => {
           </div>
           <div className="flex items-center justify-center gap-1 lg:gap-2">
             <p className="text-white text-center text-base leading-[150%]">
-              ©BSN {currentYear} | Built by GADA Studios |
+              ©BSN {currentYear} |{" "}
+              <Link href={"https://www.wearegada.com/"} target="_blank">
+                Built by GADA Studios
+              </Link>{" "}
+              |
             </p>
-            <Image
-              src={"/btrust.svg"}
-              alt="Btrust"
-              height={0}
-              width={0}
-              sizes="100vw"
-              className="w-[3.25rem] h-[1.375rem] lg:w-[3.25rem] lg:h-[1.375rem]"
-            />
+            <Link href={"https://builders.btrust.tech/"} target="_blank">
+              <Image
+                src={"/btrust.svg"}
+                alt="Btrust"
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="w-[3.25rem] h-[1.375rem] lg:w-[3.25rem] lg:h-[1.375rem]"
+              />
+            </Link>
           </div>
         </div>
       </div>

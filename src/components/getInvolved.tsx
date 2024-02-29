@@ -22,7 +22,7 @@ const GetInvolved = () => {
             imagePath="/student.svg"
             text="Join the Network! Fill out the form below to become a node, receive support in starting or growing your University's Bitcoin Club, and access educational/ job opportunities. Or, to simply connect with other Bitcoiners"
             className="w-full lg:w-[18.75rem]"
-            buttonText="Join Us!"
+            buttonText="Join Here!"
           />
           <InvolveBox
             heading="Donate"
