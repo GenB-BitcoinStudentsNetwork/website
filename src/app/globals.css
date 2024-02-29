@@ -16,6 +16,10 @@ body.no-scroll {
   overflow: hidden;
 }
 
+body {
+  background-color: white;
+}
+
 .jvm-tooltip.active {
   padding: 0.5rem 1rem !important;
 }
