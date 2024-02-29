@@ -11,7 +11,7 @@ interface Props {
 const OutlineBox = ({ height, children, text, className, network }: Props) => {
   return (
     <div
-      className={`flex p-4 lg:p-6 flex-col items-start gap-2 rounded-lg bg-transparent border-[1px] border-solid border-[#E3BFDE] ${
+      className={` w-full lg:w-auto flex p-4 lg:p-6 flex-col items-start gap-2 rounded-lg bg-transparent border-[1px] border-solid border-[#E3BFDE] ${
         height ? "lg:h-[14rem]" : "lg:h-[12.5rem]"
       }`}
     >

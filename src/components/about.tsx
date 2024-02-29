@@ -220,13 +220,13 @@ const About = () => {
       </div>
       <div className="flex py-8 lg:py-16 px-4 lg:px-[6.5rem] flex-col justify-center items-center gap-2">
         <div className="flex flex-col items-start gap-6 lg:gap-[1.8125rem]">
-          <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-[3.9375rem]">
+          <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-[3.9375rem] w-full">
             <h2
               className={`${grandisBold.className} text-primary text-[1.5rem] lg:text-[2.5rem] font-bold leading-[120%] lg:leading-normal w-full lg:w-[15.6875rem]`}
             >
               Our steps to run the Network (h/t Satoshi)
             </h2>
-            <div className="flex items-start flex-col lg:flex-row gap-6">
+            <div className="flex items-start flex-col lg:flex-row gap-6 w-full lg:w-auto">
               <OutlineBox
                 text="New resources & opportunities are broadcast to all nodes"
                 className="w-full lg:w-[15.125rem]"
@@ -248,7 +248,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row items-start gap-6">
+          <div className="flex flex-col lg:flex-row items-start gap-6 w-full">
             <OutlineBox
               text="When a node does its proof-of-work, it broadcasts its efforts to all nodes."
               className="w-full lg:w-[15.125rem]"
