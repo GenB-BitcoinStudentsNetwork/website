@@ -27,6 +27,7 @@ const Hero = () => {
             width={1072}
             height={639}
             alt="Bitcoin Student"
+            priority={true}
           />
         </div>
         <div id="about" />
