@@ -12,14 +12,16 @@ const Footer = () => {
       <div className="flex flex-col items-center gap-8">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
           <div className="flex flex-col items-center justify-center gap-2">
-            <Image
-              src={"/student-network.svg"}
-              alt={"Student Network"}
-              height={0}
-              width={0}
-              sizes="100vw"
-              className="w-[12.25rem] h-[0.74119rem] lg:w-[14.75581rem] lg:h-[0.89281rem]"
-            />
+            <Link href={"/"}>
+              <Image
+                src={"/logo_footer.png"}
+                alt={"Student Network"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="w-[9.0625rem] h-[3.5rem] lg:w-[10.75rem] lg:h-[4.125rem]"
+              />
+            </Link>
             <p className="text-white text-center text-sm lg:text-base leading-[150%]">
               An initiative of Generation Bitcoin 501(c)(3)
             </p>

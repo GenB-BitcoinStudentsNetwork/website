@@ -51,12 +51,12 @@ const Navigation = () => {
             href="/"
           >
             <Image
-              src={"/logo.svg"}
+              src={"/logo.png"}
               height={0}
               width={0}
               sizes="100vw"
               alt={"Logo"}
-              className="w-[2.97144rem] h-[1.6875rem] lg:w-[5.17256rem] lg:h-[2.9375rem]"
+              className="w-[1.77069rem] h-[1.6875rem] lg:w-[3.08231rem] lg:h-[2.9375rem]"
             />
           </Link>
           <div className="bg-black w-[0.0625rem] h-[1.6875rem]  lg:w-[0.0625rem] lg:h-[2.9375rem]" />
