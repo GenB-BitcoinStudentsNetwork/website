@@ -30,7 +30,7 @@ const NavMenu = ({ name, sectionName, className, mobile, closeNav }: Props) => {
         href={`#${sectionName}`}
         className={`${
           className ? "" : "text-base font-normal"
-        }leading-[1.5rem] text-black font-sans hover:text-primary hover:text-[1.01rem] ${className}`}
+        }leading-[1.5rem] text-black font-sans lg:hover:text-primary lg:hover:text-[1.01rem] ${className}`}
       >
         {name}
       </Link>
