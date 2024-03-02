@@ -28,7 +28,9 @@ const NavMenu = ({ name, sectionName, className, mobile, closeNav }: Props) => {
           scrollToSection(sectionName);
         }}
         href={`#${sectionName}`}
-        className={`font-normal text-base leading-[1.5rem] text-black font-sans hover:text-primary hover:text-[1.01rem] ${className}`}
+        className={`${
+          className ? "" : "text-base font-normal"
+        }leading-[1.5rem] text-black font-sans hover:text-primary hover:text-[1.01rem] ${className}`}
       >
         {name}
       </Link>

@@ -37,7 +37,7 @@ const Navigation = () => {
   return (
     <nav
       className={`w-full flex-col p-4 md:p-8 lg:px-[6.5rem] lg:pt-[1.5625rem] top-0 lg:pb-[1.5rem] bg-white z-50 flex relative ${
-        isActive ? "h-screen" : "h-auto sticky"
+        isActive ? "" : "h-auto sticky"
       }`}
       style={{ boxShadow: "0px 2px 0px 0px rgba(0, 7, 47, 0.10)" }}
     >
@@ -112,8 +112,11 @@ const Navigation = () => {
         </div>
       </div>
       {isActive && (
-        <div className="flex flex-col items-center w-full h-[21.4375rem] mt-16 bg-white">
-          <div className="flex items-center w-full flex-col gap-6 py-16">
+        <div
+          className="flex flex-col items-center w-full h-screen mt-16 top-0 left-0 absolute"
+          style={{ background: "rgba(0, 0, 0, 0.50)" }}
+        >
+          <div className="flex items-center w-full flex-col gap-6 py-16 bg-white">
             <NavMenu
               name="About Us"
               sectionName="about"
