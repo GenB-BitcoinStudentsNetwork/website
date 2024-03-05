@@ -116,25 +116,25 @@ const Navigation = () => {
           className="flex flex-col items-center w-full h-screen mt-16 top-0 left-0 absolute"
           style={{ background: "rgba(0, 0, 0, 0.50)" }}
         >
-          <div className="flex items-center w-full flex-col gap-6 py-16 bg-white">
+          <div className="flex items-center w-full flex-col gap-6 py-10 bg-white">
             <NavMenu
               name="About Us"
               sectionName="about"
-              className={`text-[2rem] font-bold leading-[115%] ${grandisBold.className}`}
+              className={`text-base leading-[115%]`}
               mobile={true}
               closeNav={closeNav}
             />
             <NavMenu
               name="Advisory Board"
               sectionName="board"
-              className={`text-[2rem] font-bold leading-[115%] ${grandisBold.className}`}
+              className={`text-base leading-[115%]`}
               mobile={true}
               closeNav={closeNav}
             />
             <NavMenu
               name="Our Network"
               sectionName="network"
-              className={`text-[2rem] font-bold leading-[115%] ${grandisBold.className}`}
+              className={`text-base leading-[115%]`}
               mobile={true}
               closeNav={closeNav}
             />
