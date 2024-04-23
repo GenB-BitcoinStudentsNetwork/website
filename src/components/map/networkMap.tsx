@@ -138,6 +138,19 @@ const NetworkMap = () => {
       },
     });
 
+    // Add event listener for scrolling
+    const mapContainer = document.getElementById("map");
+    const handleScroll = (event: {
+      deltaY: number;
+      preventDefault: () => void;
+    }) => {
+      if (event.deltaY !== 0) {
+        event.preventDefault();
+        if (mapContainer) mapContainer.scrollTop += event.deltaY;
+      }
+    };
+    mapContainer?.addEventListener("wheel", handleScroll, { passive: true });
+
     // Clean up the map instance when the component is unmounted
     return () => {
       map && map.destroy();
