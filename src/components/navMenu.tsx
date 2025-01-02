@@ -7,6 +7,7 @@ interface Props {
   className?: string;
   mobile?: boolean;
   closeNav?: () => void;
+  isNewPage?: boolean
 }
 
 const scrollToSection = (id: string) => {
@@ -18,16 +19,16 @@ const scrollToSection = (id: string) => {
   }
 };
 
-const NavMenu = ({ name, sectionName, className, mobile, closeNav }: Props) => {
+const NavMenu = ({ name, sectionName, className, mobile, closeNav, isNewPage }: Props) => {
   return (
     <div className="flex py-0 px-[0.5rem] items-center justify-center gap-[0.5rem]">
       <Link
         onClick={(e) => {
-          e.preventDefault();
+          !isNewPage && e.preventDefault();
           mobile && closeNav && closeNav();
-          scrollToSection(sectionName);
+          !isNewPage  && scrollToSection(sectionName);
         }}
-        href={`#${sectionName}`}
+        href={isNewPage ? `${sectionName}`: `#${sectionName}`}
         className={`${
           className ? "" : "text-base font-normal"
         }leading-[1.5rem] text-black font-sans lg:hover:text-primary lg:hover:text-[1.01rem] ${className}`}

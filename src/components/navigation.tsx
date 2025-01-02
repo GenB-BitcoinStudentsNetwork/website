@@ -76,6 +76,7 @@ const Navigation = () => {
           <NavMenu name="About Us" sectionName="about" />
           <NavMenu name="Advisory Board" sectionName="board" />
           <NavMenu name="Our Network" sectionName="network" />
+          <NavMenu name="Layer Zero" sectionName="/layer-zero" isNewPage={true}/>
         </div>
         <Link
           onClick={(e) => {
