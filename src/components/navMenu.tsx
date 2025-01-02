@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 interface Props {
   name: string;
@@ -7,7 +8,7 @@ interface Props {
   className?: string;
   mobile?: boolean;
   closeNav?: () => void;
-  isNewPage?: boolean
+  isNewPage?: boolean;
 }
 
 const scrollToSection = (id: string) => {
@@ -19,16 +20,27 @@ const scrollToSection = (id: string) => {
   }
 };
 
-const NavMenu = ({ name, sectionName, className, mobile, closeNav, isNewPage }: Props) => {
+const NavMenu = ({
+  name,
+  sectionName,
+  className,
+  mobile,
+  closeNav,
+  isNewPage,
+}: Props) => {
+  const pathname = usePathname();
+  const router = useRouter();
   return (
     <div className="flex py-0 px-[0.5rem] items-center justify-center gap-[0.5rem]">
       <Link
         onClick={(e) => {
-          !isNewPage && e.preventDefault();
-          mobile && closeNav && closeNav();
-          !isNewPage  && scrollToSection(sectionName);
+          if (pathname === "/") {
+            !isNewPage && e.preventDefault();
+            mobile && closeNav && closeNav();
+            !isNewPage && scrollToSection(sectionName);
+          }
         }}
-        href={isNewPage ? `${sectionName}`: `#${sectionName}`}
+        href={isNewPage ? `${sectionName}` : `/#${sectionName}`}
         className={`${
           className ? "" : "text-base font-normal"
         }leading-[1.5rem] text-black font-sans lg:hover:text-primary lg:hover:text-[1.01rem] ${className}`}
