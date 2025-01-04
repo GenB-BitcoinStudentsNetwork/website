@@ -149,6 +149,14 @@ const Navigation = () => {
               mobile={true}
               closeNav={closeNav}
             />
+            <NavMenu
+              name="Layer Zero"
+              sectionName="/layer-zero"
+              mobile={true}
+              className={`text-base leading-[115%]`}
+              isNewPage={true}
+              closeNav={closeNav}
+            />
           </div>
         </div>
       )}
