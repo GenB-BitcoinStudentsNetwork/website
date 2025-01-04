@@ -13,7 +13,7 @@ export default function LeftTimeline({
   return (
     <div className="grid grid-cols-2 lg:w-[41rem] mb-10">
       <div className="flex items-center gap-12 w-full relative">
-        <div className="lg:w-[17.0625rem] flex flex-col gap-2 items-end">
+        <div className="lg:w-[17.0625rem] mr-12 flex flex-col gap-2 items-end">
           <TimelineDate date={date} />
           <TimelineDescription description={description} />
         </div>
