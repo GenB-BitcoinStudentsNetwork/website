@@ -3,6 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div className="flex flex-col lg:py-[6rem] py-[3rem] lg:px-[6.5rem] px-[2rem] bg-dark-green gap-6 w-full">
       <Heading2 text="About Layer Zero" />
@@ -57,10 +65,14 @@ export default function About() {
             </p>
             <div className="flex w-full">
               <Link
-                href={"/"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("faq");
+                }}
+                href={"#faq"}
                 className="bg-primary text-white px-[1.25rem] py-[0.875rem] rounded-lg gap-2"
               >
-                Get Involved
+                Learn More
               </Link>
             </div>
           </div>

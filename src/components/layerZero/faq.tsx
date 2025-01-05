@@ -87,7 +87,10 @@ export default function Faq() {
     },
   ];
   return (
-    <div className="py-[3rem] lg:py-[4rem] bg-[#F7EEF6] flex items-center justify-center px-8">
+    <div
+      className="py-[3rem] lg:py-[4rem] bg-[#F7EEF6] flex items-center justify-center px-8"
+      id="faq"
+    >
       <div className="flex flex-col items-center justify-center lg:w-[50.875rem] gap-14">
         <div className="flex flex-col justify-center items-center gap-4 w-full lg:w-[35.9rem]">
           <Heading2
