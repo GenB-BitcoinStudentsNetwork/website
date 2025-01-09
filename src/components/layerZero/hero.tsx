@@ -22,7 +22,10 @@ export default function Hero() {
             Through Community Immersion
           </p>
         </div>
-        <PrimaryButton text="Apply Now" link="#get-involved" />
+        <PrimaryButton
+          text="Apply Now"
+          link="https://form.typeform.com/to/FXfttZrK"
+        />
       </div>
     </div>
   );
