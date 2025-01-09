@@ -62,8 +62,6 @@ export default function Building() {
             >
               Apply Now
             </Link>
-            {/* <PrimaryButton text="Apply Now" /> */}
-            {/* <SecondaryButton text="Apply Now" /> */}
           </div>
         </div>
       </div>
