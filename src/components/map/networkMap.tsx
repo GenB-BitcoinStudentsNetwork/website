@@ -139,7 +139,7 @@ const NetworkMap = () => {
     });
 
     // Add event listener for scrolling
-    const mapContainer = document.getElementById("map");
+    const mapContainer = document?.getElementById("map");
     const handleScroll = (event: {
       deltaY: number;
       preventDefault: () => void;

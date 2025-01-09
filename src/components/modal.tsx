@@ -11,7 +11,7 @@ interface Props {
 
 const Modal = ({ isOpen, closeModal, children }: Props) => {
   useEffect(() => {
-    const body = document.querySelector("body") as HTMLBodyElement;
+    const body = document?.querySelector("body") as HTMLBodyElement;
 
     if (isOpen) {
       body.style.overflow = "hidden";

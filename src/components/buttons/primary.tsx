@@ -9,7 +9,7 @@ interface Props {
 }
 const PrimaryButton = ({ text, disabled, link }: Props) => {
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
+    const element = document?.getElementById(id);
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
