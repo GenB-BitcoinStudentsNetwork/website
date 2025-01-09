@@ -1,9 +1,8 @@
-"use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NavMenu from "./navMenu";
-import { grandisBold } from "@/font/grandis";
+import { usePathname } from "next/navigation";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -16,6 +15,9 @@ const scrollToSection = (id: string) => {
 
 const Navigation = () => {
   const [isActive, setIsActive] = useState(false);
+  const pathname = usePathname();
+
+  const new_pages_route = ["/layer-zero"];
 
   const openNav = () => {
     setIsActive(true);
@@ -45,8 +47,10 @@ const Navigation = () => {
         <div className="flex items-center gap-1 lg:gap-3">
           <Link
             onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("home");
+              if (pathname && !new_pages_route.includes(pathname)) {
+                e.preventDefault();
+                scrollToSection("home");
+              }
             }}
             href="/"
           >
@@ -76,13 +80,20 @@ const Navigation = () => {
           <NavMenu name="About Us" sectionName="about" />
           <NavMenu name="Advisory Board" sectionName="board" />
           <NavMenu name="Our Network" sectionName="network" />
+          <NavMenu
+            name="Layer Zero"
+            sectionName="/layer-zero"
+            isNewPage={true}
+          />
         </div>
         <Link
           onClick={(e) => {
-            e.preventDefault();
-            scrollToSection("get-involved");
+            if (pathname === "/") {
+              e.preventDefault();
+              scrollToSection("get-involved");
+            }
           }}
-          href={"#get-involved"}
+          href={"/#get-involved"}
           className="bg-primary hover:bg-dark-green text-white px-[1.2rem] py-[0.875rem] rounded-lg gap-2 hidden lg:flex"
         >
           Get Involved
@@ -136,6 +147,14 @@ const Navigation = () => {
               sectionName="network"
               className={`text-base leading-[115%]`}
               mobile={true}
+              closeNav={closeNav}
+            />
+            <NavMenu
+              name="Layer Zero"
+              sectionName="/layer-zero"
+              mobile={true}
+              className={`text-base leading-[115%]`}
+              isNewPage={true}
               closeNav={closeNav}
             />
           </div>
