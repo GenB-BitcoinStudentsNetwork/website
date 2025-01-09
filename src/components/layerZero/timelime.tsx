@@ -14,23 +14,11 @@ export default function Timeline() {
           </p>
         </div>
         <div className="flex flex-col relative items-center justify-center">
-          <LeftTimeline
-            date="Dec 23, 2024"
-            description="Begin outreach to communities."
-          />
-          <RightTimeline date="Jan 3, 2025" description="Launch application" />
-          <LeftTimeline date="Feb 1, 2025" description="Application cutoff" />
-          <RightTimeline
-            date="Feb 1 - 10, 2025"
-            description="Screen and interview applicants"
-          />
-          <LeftTimeline date="Feb 15, 2025" description="Send out approvals" />
-          <RightTimeline date="Jun 1, 2025" description="Depart (flexible)" />
-          <LeftTimeline
-            date="Aug 15, 2025"
-            description="Return (flexible)"
-            last={true}
-          />
+          <LeftTimeline date="Jan 9, 2025" description="Application launches" />
+          <RightTimeline date="Feb 15, 2025" description="Application Closes" />
+          <LeftTimeline date="Mar 1, 2025" description="Decisions Released" />
+          <RightTimeline date="Beginning of June" description="Depatures" />
+          <LeftTimeline date="Mid August" description="Return" last={true} />
         </div>
       </div>
     </div>
