@@ -33,8 +33,8 @@ export default function About() {
               innovation.
             </p>
           </div>
-          <div className="flex gap-[2rem]">
-            <div className="flex items-center justify-center min-w-[35.5rem]">
+          <div className="flex flex-col lg:flex-row gap-[2rem]">
+            <div className="flex items-center justify-center w-full lg:min-w-[35.5rem]">
               <Image
                 src={"/network.png"}
                 alt={"Network"}
