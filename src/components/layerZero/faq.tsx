@@ -6,12 +6,12 @@ export default function Faq() {
     {
       question: "What is Layer Zero?",
       answer:
-        "Layer Zero connects students with global communities to build the foundational social layer supporting decentralized systems. Participants engage in promoting education, innovation, and collaboration for financial and technological empowerment.",
+        "Layer Zero connects students with global communities to build the foundational social layer supporting decentralized open-source technology protocols. Participants engage in promoting education, innovation, and collaboration for financial, technological, and educational empowerment.",
     },
     {
       question: "Who can apply to Layer Zero?",
       answer:
-        "The program is open to all undergraduate-aged students with a passion for decentralized innovation. Applicants must be 18 or older, motivated to learn, and committed to the program’s mission.",
+        "The program is open to all undergraduate-aged students with a passion for Bitcoin. Applicants must be 18 or older, motivated to learn, and committed to the program’s mission.",
     },
     {
       question: "What is the duration of the program?",
@@ -21,7 +21,7 @@ export default function Faq() {
     {
       question: "Is this an all-expenses-paid program?",
       answer:
-        "Yes! All expenses for travel, accommodation, food, and other potential logistics costs are fully covered, allowing participants to focus entirely on their internship without financial burden. This is a unique opportunity for students to immerse themselves in the Bitcoin ecosystem while receiving full financial support.",
+        "Yes! All expenses for travel, accommodation, food, and other potential logistics costs are fully covered, allowing participants to focus entirely on their internship without financial burden. This is a unique opportunity for students to immerse themselves in the Bitcoin ecosystem while receiving full financial support. ",
     },
     {
       question: "Where will I be working?",
@@ -31,12 +31,12 @@ export default function Faq() {
     {
       question: "What kind of projects will I be working on?",
       answer:
-        "These are not behind desk jobs. You will be furthering bitcoin adoption through in the field operational initiatives which could include teaching local communities about Bitcoin, helping set up local Bitcoin payment systems,  and contributing to real world applications powered by Bitcoin. The specific project you’ll be involved in will depend on the community’s needs.",
+        "These are not behind desk jobs. You will be furthering Bitcoin adoption through in the field operational initiatives which could include teaching local communities about Bitcoin, helping set up local Bitcoin payment systems,  and contributing to real world applications powered by Bitcoin. The specific project you’ll be involved in will depend on the community’s needs.",
     },
     {
       question: "Do I need to speak another language?",
       answer:
-        "Multilingual skills are a plus, but basic English and translation tools are sufficient for most assignments.",
+        "Multilingual skills are a plus, but basic English (or the local language) and translation tools are sufficient for most assignments.",
     },
     {
       question: "What kind of skills do I need?",
@@ -45,7 +45,7 @@ export default function Faq() {
     },
     {
       question: "How do I apply?",
-      answer: "Visit the 'Apply Now' page",
+      answer: 'Visit the "Apply Now" page.',
     },
     {
       question: "What is the selection process?",
@@ -68,22 +68,18 @@ export default function Faq() {
         "The program is designed to support you every step of the way. You'll have access to experienced mentors who can offer guidance and insights, coordinators who help address logistical or program-related concerns, and a supportive network of peers to brainstorm solutions and share experiences. Whether you're facing technical difficulties, cultural adjustments, or project-related hurdles, you'll be equipped with the tools, resources, and a collaborative community to navigate challenges and grow from the experience.",
     },
     {
-      question: "Can I return early if needed?",
-      answer: "Early returns are possible in case of emergencies.",
-    },
-    {
       question: "Is the program a paid position?",
       answer:
         "While not a salaried program, all expenses are covered, and participants gain unparalleled experience and networking opportunities.",
     },
     {
       question: "Where can I go for more information?",
-      answer: "Contact us at contact@bitcoinstudentsnetwork.org. ",
+      answer: "Contact us at contact@bitcoinstudentsnetwork.org.",
     },
     {
       question: "Legal Disclosures",
       answer:
-        "Please note that legal disclosures, including waivers, will need to be signed prior to participation. These waivers clarify that the Bitcoin Students Network and its affiliates will not be held liable for any personal, financial, or other risks encountered during your involvement in the program. Participants are responsible for their own actions and decisions throughout the experience",
+        "Please note that legal disclosures, including waivers, will need to be signed prior to participation. These waivers clarify that the Bitcoin Students Network and its affiliates will not be held liable for any personal, financial, or other risks encountered during your involvement in the program. Participants are responsible for their own actions and decisions throughout the experience.",
     },
   ];
   return (
