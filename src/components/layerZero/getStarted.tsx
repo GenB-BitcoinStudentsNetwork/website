@@ -16,7 +16,7 @@ export default function GetStarted() {
           step="01"
         />
         <GetStartedSteps
-          text="Submit your application by February 1st"
+          text="Submit your application by February 15th"
           step="02"
         />
         <GetStartedSteps
