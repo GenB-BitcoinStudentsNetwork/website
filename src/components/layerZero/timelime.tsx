@@ -4,7 +4,7 @@ import RightTimeline from "../rightTimeline";
 
 export default function Timeline() {
   return (
-    <div className="flex justify-center items-center py-[4rem]">
+    <div className="flex justify-center items-center py-[4rem] px-8 lg:px-0">
       <div className="lg:w-[41rem] gap-12 flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center gap-2">
           <Heading2 text="Project Timeline" />
