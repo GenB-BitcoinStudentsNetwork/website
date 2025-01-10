@@ -27,7 +27,7 @@ const Founders = () => {
             founder
             imagePath="/ella.png"
             name="Ella Hough"
-            info="Bitcoin @ Cornell - Robert S. Harrison College Scholar Program | Founder at Cornell Bitcoin Club | Co-Founder at BSN | Project Lead at Generation Bitcoin"
+            info="Bitcoin @ Cornell - Robert S. Harrison College Scholar Program | Founder @ Cornell Bitcoin Club | Project Lead @ GenB"
             twitterLink="https://twitter.com/21MMforthe21st"
             linkedinLink="https://www.linkedin.com/in/ella-hough/"
             npub="npub1z5umqa38xfv94y3fpver2khw2qar2v54jetl24939j4f0yyhggdqrh5lwd"
