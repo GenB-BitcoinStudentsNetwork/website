@@ -36,7 +36,7 @@ const Founders = () => {
                 "Ella believes the 21,000,000 bitcoin are humanity’s tools for the 21st century. Pursuing a Bitcoin-focused study at Cornell University, she studies the dynamics of Bitcoin’s diffusion through society.",
               ],
               [
-                "Ellas is the founder of the Cornell Bitcoin Club, Project Lead at Generation Bitcoin, co-founder of the Bitcoin Students Network, author of the Bitcoin “quick start” blog, Sats Chats, and contributor to Bitcoin Magazine. Previously, Ella worked at IBM, where she managed STEM learning experiences for 75k+ students.",
+                "Ella is the founder of the Cornell Bitcoin Club, Project Lead at Generation Bitcoin, co-founder of the Bitcoin Students Network, author of the Bitcoin “quick start” blog, Sats Chats, and contributor to Bitcoin Magazine. Previously, Ella worked at IBM, where she managed STEM learning experiences for 75k+ students.",
               ],
             ]}
           />
