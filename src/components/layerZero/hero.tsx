@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="lg:w-[50rem] flex items-center justify-center flex-col lg:gap-6 gap-4 lg:py-[8rem] py-[3rem]">
         <div className="flex flex-col items-center justify-center gap-2">
           <h1
-            className={`text-black font-bold text-[1.5rem] lg:text-[3.5rem] text-center leading-[115%] lg:leading-[4.6rem] w-[19.75rem] lg:w-full ${grandis.className}`}
+            className={`text-black font-bold text-[2.5rem] lg:text-[3.5rem] text-center leading-[115%] lg:leading-[4.6rem] w-[19.75rem] lg:w-full ${grandis.className}`}
           >
             Layer Zero
           </h1>
