@@ -1,4 +1,5 @@
 import Heading2 from "../heading2";
+import Image from "next/image";
 
 export default function Background() {
   return (
@@ -9,7 +10,16 @@ export default function Background() {
       <div className="flex flex-col gap-12">
         <div className="flex flex-col lg:flex-row w-full gap-8 items-center">
           <div className="flex w-full lg:min-w-[44rem] items-center justify-center">
-            <div className="w-full h-[11rem] lg:h-[27rem] bg-[#EFEEEE]"></div>
+            <div className="w-full">
+              <Image
+                src={"/community.svg"}
+                alt={"Network"}
+                sizes={"100vw"}
+                height={0}
+                width={0}
+                className={"h-full w-full lg:h-[27rem] lg:w-full object-cover"}
+              />
+            </div>
           </div>
           <div className="flex flex-col gap-5">
             <p className="text-base font-normal leading-[1.5rem] font-sans text-[#0F0F0F]">
@@ -37,7 +47,7 @@ export default function Background() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row w-full gap-8 items-center">
+        <div className="flex lg:flex-row w-full gap-8 items-center flex-col-reverse">
           <div className="flex flex-col gap-5">
             <p className="text-base font-normal leading-[1.5rem] font-sans text-[#0F0F0F]">
               The Bitcoin network holds immense power to foster connections
@@ -60,7 +70,16 @@ export default function Background() {
             </p>
           </div>
           <div className="flex w-full lg:min-w-[44rem] items-center justify-center">
-            <div className="w-full h-[11rem] lg:h-[22.5rem] bg-[#EFEEEE]"></div>
+            <Image
+              src={"/work.svg"}
+              alt={"Network"}
+              sizes={"100vw"}
+              height={0}
+              width={0}
+              className={
+                "h-full w-full lg:h-[27.875rem] lg:w-full object-cover"
+              }
+            />
           </div>
         </div>
       </div>
