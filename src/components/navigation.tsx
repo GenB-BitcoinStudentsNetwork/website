@@ -63,17 +63,6 @@ const Navigation = () => {
               className="w-[4.37994rem] h-[1.6875rem] lg:w-[7.62431rem] lg:h-[2.9375rem]"
             />
           </Link>
-          <div className="bg-black w-[0.0625rem] h-[1.6875rem]  lg:w-[0.0625rem] lg:h-[2.9375rem]" />
-          <Link target="_blank" href="https://www.genbitcoin.org/">
-            <Image
-              src={"/genb_logo.png"}
-              height={0}
-              width={0}
-              sizes="100vw"
-              alt={"Logo"}
-              className="w-[2.97144rem] h-[1.375rem] lg:w-[5.0625rem] lg:h-[2.1875rem]"
-            />
-          </Link>
         </div>
 
         <div className="items-start gap-[2.5rem] hidden lg:inline-flex">

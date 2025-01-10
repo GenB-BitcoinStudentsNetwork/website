@@ -55,11 +55,6 @@ const Footer = () => {
               name="twitter"
             />
             <SocialLink
-              imagePath="/blue_linkedin.svg"
-              link="https://www.linkedin.com/company/generation-bitcoin/"
-              name="linkedin"
-            />
-            <SocialLink
               imagePath="/tree.svg"
               link="https://linktr.ee/btcstudents"
               name="tree"
