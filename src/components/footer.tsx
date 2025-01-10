@@ -22,9 +22,6 @@ const Footer = () => {
                 className="w-[9.0625rem] h-[3.5rem] lg:w-[10.75rem] lg:h-[4.125rem]"
               />
             </Link>
-            <p className="text-white text-center text-sm lg:text-base leading-[150%]">
-              An initiative of Generation Bitcoin 501(c)(3)
-            </p>
           </div>
         </div>
         <div className="flex flex-col items-center gap-4">

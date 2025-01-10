@@ -1,6 +1,5 @@
 "use client";
 
-import PrimaryButton from "./buttons/primary";
 import Heading2 from "./heading2";
 import InvolveBox from "./involveBox";
 
@@ -13,7 +12,7 @@ const GetInvolved = () => {
           <InvolveBox
             heading="Industry"
             imagePath="/industry.svg"
-            text="Organize/speak on a panel, host a Twitter space, provide financial sponsorship (goes through GenB), donate books, equipment, resources, etc., offer mentorship and expertise, share internship and job opportunities, lead workshops and training, offer networking opportunities, brainstorm collaborative projects…anything you can think of"
+            text="Organize/speak on a panel, host a Twitter space, provide financial sponsorship, donate books, equipment, resources, etc., offer mentorship and expertise, share internship and job opportunities, lead workshops and training, offer networking opportunities, brainstorm collaborative projects…anything you can think of"
             className="w-full lg:w-[24.25rem]"
             buttonText="Get Started"
             href="https://form.typeform.com/to/mb4HufnC"
@@ -29,7 +28,7 @@ const GetInvolved = () => {
           <InvolveBox
             heading="Donate"
             imagePath="/donation.svg"
-            text="Your contribution, no matter the size, is most appreciated. Generation Bitcoin is a 501(c)(3), and funds will be used to support our nodes and operational expenses. We will be sharing reports of how the sats are used"
+            text="Your contribution, no matter the size, is most appreciated. Bitcoin Student Network is a 501(c)(4), and funds will be used to support our nodes and operational expenses. We will be sharing reports of how the sats are used"
             className="w-full lg:w-[18.75rem]"
             buttonText="Donate with BTCPAY"
             donation
