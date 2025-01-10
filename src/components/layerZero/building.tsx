@@ -31,22 +31,22 @@ export default function Building() {
         <BuildingCode
           text="By fostering global dialogue about Bitcoin’s potential, Layer Zero enables more effective collaboration among developers, educators, and adopters."
           header="Better Communication"
-          image=""
+          image="/better.svg"
         />
         <BuildingCode
           text="Bitcoin can only thrive when people, nodes in the human sense, connect, share knowledge, and build trust in the system's design and purpose."
           header="Stronger Communities"
-          image=""
+          image="/strong.svg"
         />
         <BuildingCode
           text="Layer Zero supports cross-cultural, cross-disciplinary cooperation, where the focus is on shared goals like financial inclusion, economic empowerment, and decentralized innovation."
           header="Empowering Collaboration"
-          image=""
+          image="/collaborations.svg"
         />
         <BuildingCode
           text="Building Layer Zero means creating systems of communication & coordination, empowerment, and resilience that complement Bitcoin’s technical layers, ensuring that people have the tools and relationships they need to shape and support the spontaneous order of the present and future."
           header="Human Protocols for a Decentralized World"
-          image=""
+          image="/human.svg"
           className="col-span-2"
         />
         <div className="flex flex-col gap-6 justify-end">
