@@ -71,7 +71,7 @@ export default function Background() {
           </div>
           <div className="flex w-full lg:min-w-[44rem] items-center justify-center">
             <Image
-              src={"/community.svg"}
+              src={"/work.svg"}
               alt={"Network"}
               sizes={"100vw"}
               height={0}
