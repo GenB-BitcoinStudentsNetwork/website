@@ -5,7 +5,7 @@ import NavMenu from "./navMenu";
 import { usePathname } from "next/navigation";
 
 const scrollToSection = (id: string) => {
-  const element = document.getElementById(id);
+  const element = document?.getElementById(id);
   if (element) {
     element.scrollIntoView({
       behavior: "smooth",
@@ -21,16 +21,16 @@ const Navigation = () => {
 
   const openNav = () => {
     setIsActive(true);
-    document.querySelector("body")?.classList.toggle("no-scroll");
+    document?.querySelector("body")?.classList.toggle("no-scroll");
   };
 
   const closeNav = () => {
     setIsActive(false);
-    document.querySelector("body")?.classList.remove("no-scroll");
+    document?.querySelector("body")?.classList.remove("no-scroll");
   };
 
   useEffect(() => {
-    const hash = window.location.hash;
+    const hash = window?.location?.hash;
     if (hash) {
       scrollToSection(hash.substring(1));
     }
