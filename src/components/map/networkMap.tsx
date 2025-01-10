@@ -153,7 +153,11 @@ const NetworkMap = () => {
 
     // Clean up the map instance when the component is unmounted
     return () => {
-      map && map.destroy();
+      try {
+        map && map.destroy();
+      } catch (error) {
+        console.log("error problem", error);
+      }
     };
   }, []);
 
