@@ -13,7 +13,7 @@ const Founders = () => {
             founder
             imagePath="/ash.png"
             name="Arsh Molu"
-            info="Promoting Financial Freedom at HRF | Co-founder of Generation Bitcoin"
+            info="Promoting Financial Freedom at The Human Rights Foundation"
             twitterLink="https://twitter.com/arshmolu?lang=en"
             linkedinLink="https://www.linkedin.com/in/arsh-molu-b35783206/"
             npub="npub1wlkfvm7dvnusz9fv44wuwucu0jp3lc3wqt36ax0lz33hukjga7wq6hqwhy"

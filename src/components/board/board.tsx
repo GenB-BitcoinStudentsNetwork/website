@@ -69,7 +69,7 @@ const Board = () => {
               <BioCard
                 imagePath="/michael.png"
                 name="Michael Rihani"
-                info="Bitcoin Product Lead, Cash App at Block"
+                info="Director of Product, Coinbase"
                 twitterLink="https://twitter.com/michaelrihani"
                 linkedinLink="https://www.linkedin.com/in/michaelrihani/"
                 npub="npub1zvrwm4n0rk3hftwyzl8csjaulatuvwvk2c3kc8u89mssgq7qrvks5zvf63"
@@ -84,7 +84,7 @@ const Board = () => {
               <BioCard
                 imagePath="/abubakar.png"
                 name="Abubakar Nur Khalil"
-                info="Bitcoin core contributor | CEO & CTO at Recursive Capital | Board Member of ₿trust"
+                info="Bitcoin core contributor | CEO & CTO at Recursive Capital | Board Member and interin CEO at ₿trust, "
                 twitterLink="https://twitter.com/ihate1999"
                 linkedinLink="https://www.linkedin.com/in/abubakar-nur-khalil-29923b1a0/"
                 npub="npub1sn0q3zptdcm8qh8ktyhwtrnr9htwpykav8qnryhusr9mcr9ustxqe4tr2x"
@@ -97,7 +97,7 @@ const Board = () => {
               <BioCard
                 imagePath="/lucas.png"
                 name="Lucas Ferreira"
-                info="Evangelist at Lightning Labs | Cofounder and Executive Director at Vinteum | Organizer of Satsconf"
+                info="Cofounder and Executive Director at Vinteum | Organizer of Satsconf"
                 twitterLink="https://twitter.com/lucasdcf"
                 linkedinLink="https://www.linkedin.com/in/ldecferreira/"
                 npub="npub1pumdyz7qfu0suamv4nrl0vcg574dtl5mwazva6nyjxhpwc4ccxxqca3ane"
