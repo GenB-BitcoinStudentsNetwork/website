@@ -47,7 +47,7 @@ const NetworkMap = () => {
     Japan: ["Hitotsubashi University", "Sophia University"],
     Mexico: ["Instituto Tecnológico Autónomo de México"],
     Italy: ["Politecnico di Milano", "Politecnico di Torino"],
-    Brazil: ["Clube Bitcoin São Paulo"],
+    Brazil: ["Clube Bitcoin UnB", "Clube Bitcoin São Paulo"],
     Spain: ["European Bitcoiners"],
     Australia: ["University of New South Wales"],
     Ghana: ["University of Ghana"],
