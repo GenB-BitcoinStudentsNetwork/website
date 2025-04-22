@@ -77,6 +77,19 @@ const Footer = () => {
             </Link>
           </div>
         </div>
+        <div className="flex flex-col gap-y-[1.125rem] items-center px-4">
+          <div className="w-[6rem] h-[0.125rem] bg-primary rounded"></div>
+          <div className="flex flex-col gap-y-2 items-center justify-center w-full lg:w-[45.5rem]">
+            <h3 className="font-sans font-bold text-[1.125rem] leading-[150%] tracking-[0%] text-center text-white">
+              Disclaimer!!!
+            </h3>
+            <p className="font-sans text-white text-base leading-[150%] tracking-[0%] text-center">
+              Contributions to Bitcoin Students Network are not deductible as
+              charitable contributions for federal income tax purposes. Bitcoin
+              Students Network is a 501(c)(4) nonprofit organization.
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
   );
