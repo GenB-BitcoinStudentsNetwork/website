@@ -169,6 +169,7 @@ const NetworkMap = () => {
           <div id="map" className={style["jvmap-smart"]}></div>
         </div>
       </div>
+      <div id="summit"/>
     </div>
   );
 };

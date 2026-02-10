@@ -69,11 +69,7 @@ const Navigation = () => {
           <NavMenu name="About Us" sectionName="about" />
           <NavMenu name="Advisory Board" sectionName="board" />
           <NavMenu name="Our Network" sectionName="network" />
-          <NavMenu
-            name="Layer Zero"
-            sectionName="/layer-zero"
-            isNewPage={true}
-          />
+          <NavMenu name="Summit" sectionName="summit"/>
         </div>
         <Link
           onClick={(e) => {
@@ -139,11 +135,10 @@ const Navigation = () => {
               closeNav={closeNav}
             />
             <NavMenu
-              name="Layer Zero"
-              sectionName="/layer-zero"
-              mobile={true}
+              name="Summit"
+              sectionName="summit"
               className={`text-base leading-[115%]`}
-              isNewPage={true}
+              mobile={true}
               closeNav={closeNav}
             />
           </div>
