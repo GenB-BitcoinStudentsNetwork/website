@@ -69,7 +69,7 @@ const Board = () => {
               <BioCard
                 imagePath="/michael.png"
                 name="Michael Rihani"
-                info="Director of Product, Coinbase"
+                info="Head of Crypto at Nubank"
                 twitterLink="https://twitter.com/michaelrihani"
                 linkedinLink="https://www.linkedin.com/in/michaelrihani/"
                 npub="npub1zvrwm4n0rk3hftwyzl8csjaulatuvwvk2c3kc8u89mssgq7qrvks5zvf63"
@@ -113,7 +113,7 @@ const Board = () => {
             </BoardDepartment>
           </BoardLayout>
           <BoardLayout>
-            <BoardDepartment title="University Outreach">
+            <BoardDepartment title="University Outreach" centerTitle={true}>
               <BioCard
                 imagePath="/andrew.png"
                 name="Andrew Bailey"
@@ -127,22 +127,7 @@ const Board = () => {
                   ],
                 ]}
               />
-              <BioCard
-                imagePath="/burak.png"
-                name="Burak Tamaç"
-                info="Adjunct Professor at Montclair State University"
-                twitterLink="https://twitter.com/burak_tamac"
-                linkedinLink="https://www.linkedin.com/in/buraktamac/"
-                npub=""
-                bio={[
-                  [
-                    "Burak Tamac studied theories of freedom in his Ph.D. dissertation. His journey with Bitcoin began in 2020 with a curiosity to understand the concept of Bitcoin and its connection to freedom.",
-                  ],
-                  [
-                    "Currently, he has been teaching a course on the politics of cryptocurrency and blockchain at Montclair State University. The course explores the fundamentals of freedom, money, and the evolving role of cryptocurrencies in shaping their dynamics both presently and in the future.",
-                  ],
-                ]}
-              />
+              
             </BoardDepartment>
             <BoardDepartment title="Bitcoin Community Relationship">
               <BioCard
@@ -174,23 +159,7 @@ const Board = () => {
             </BoardDepartment>
           </BoardLayout>
           <BoardLayout>
-            <BoardDepartment title="Career Development & Opportunities">
-              <BioCard
-                imagePath="/eric.png"
-                name="Eric Podwojski"
-                info="Co-Founder of Bitcoin Talent Co."
-                twitterLink="https://twitter.com/epodrulz"
-                linkedinLink="https://www.linkedin.com/in/eric-podwojski/"
-                npub="npub15fyjxjaq0jpjerhfny2lz3wq9quzg4yetzdx4w98gc0jaulwcayqz937zg"
-                bio={[
-                  [
-                    "Eric is the Co-founder of Bitcoin Talent Co., the leading provider of hiring solutions for businesses building on Bitcoin. Before that, he worked in the Bitcoin industry as a Sales Account Manager at both Bitcoin Magazine and The Bitcoin Conference.",
-                  ],
-                  [
-                    "He holds a Bachelor of Science in Energy Engineering from Penn State University, where he first became involved with Bitcoin.",
-                  ],
-                ]}
-              />
+            <BoardDepartment title="Career Development & Opportunities" centerTitle={true}>
               <BioCard
                 imagePath="/fox.png"
                 name="Martell Fox"
@@ -208,23 +177,8 @@ const Board = () => {
                 ]}
               />
             </BoardDepartment>
-            <BoardDepartment title="Club Development & Support ">
-              <BioCard
-                imagePath="/chris.png"
-                name="Chris Smith"
-                info="Head of Relations at BTC Inc."
-                twitterLink="https://twitter.com/ChrisSmithBTC"
-                linkedinLink="https://www.linkedin.com/in/christianosmith/"
-                npub="npub18evdx4jnsj03vgx95jsv25kcvp04rkstcfg6y2kcxjen9wd57v2sa7tjdt"
-                bio={[
-                  [
-                    "Chris is the Relations & Partnerships lead for the Bitcoin Conference, focused on expanding community initiatives and relations in pursuit of the comapnies goal, which is hyperbitcoinization. Chris has also spent a lot of his time leading the initiative to make student attendance free at BTC Inc events. Alongside this, he enjoys contributing as an author to Bitcoin Magazine.",
-                  ],
-                  [
-                    "He is a graduate from Lipscomb University's College of Business with a degree in Finance. During his time at Lipscomb, he was a key orchestrator to the success of Sigma Alpha being the first fraternity in the nation to accept dues in bitcoin and hold bitcoin on it's balance sheet.",
-                  ],
-                ]}
-              />
+            <BoardDepartment title="Club Development & Support " centerTitle={true}>
+              
               <BioCard
                 imagePath="/d.png"
                 name="D++"

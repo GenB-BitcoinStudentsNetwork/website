@@ -8,6 +8,7 @@ import Hero from "@/components/hero";
 import Navigation from "@/components/navigation";
 // import NetworkMap from "@/components/map/networkMap";
 import Resources from "@/components/resources";
+import Summit from "@/components/summit/Summit";
 
 import dynamic from "next/dynamic";
 
@@ -28,6 +29,7 @@ export default function Home() {
       <Founders />
       <Board />
       <NetworkMap />
+      <Summit/>
       <div>
         <Footer />
       </div>
