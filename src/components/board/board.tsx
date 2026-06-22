@@ -79,6 +79,19 @@ const Board = () => {
                   ],
                 ]}
               />
+              <BioCard
+                imagePath="/kyle.png"
+                name="Kyle Knight"
+                info="CEO and Founder of Bitcoin Culture Hub"
+                twitterLink="https://x.com/buckethatbtc"
+                linkedinLink="https://www.linkedin.com/in/kyle-knight-ucla/"
+                npub=""
+                bio={[
+                  [
+                    "Kyle Knight is the CEO and Founder of Bitcoin Culture Hub. He holds a Master's degree from UCLA and a degree in Mechanical Engineering. Kyle was a part of Bitcoin Trading Cards and serves as an advisor for the Bitcoin Students Network.",
+                  ],
+                ]}
+              />
             </BoardDepartment>
             <BoardDepartment title="Finance & Operations">
               <BioCard

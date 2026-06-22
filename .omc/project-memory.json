@@ -1,0 +1,162 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1782167598770,
+  "projectRoot": "C:\\Users\\rahul\\OneDrive\\Desktop\\website",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "next",
+        "version": "14.1.0",
+        "category": "fullstack"
+      },
+      {
+        "name": "react",
+        "version": "18",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "18",
+        "category": "frontend"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "cd \"C:/Users/rahul/OneDrive/Desktop/website\" && npm run build 2>&1 | tail -45",
+    "testCommand": null,
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "public",
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 57,
+      "lastAccessed": 1782167598687,
+      "keyFiles": [
+        "abubakar.png",
+        "andrew.png",
+        "ash.png",
+        "better.svg",
+        "bitcoin_student.png"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 0,
+      "lastAccessed": 1782167598717,
+      "keyFiles": []
+    },
+    "static-font": {
+      "path": "static-font",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1782167598718,
+      "keyFiles": [
+        "Grandis-Bold.woff2",
+        "Grandis-Regular.woff2"
+      ]
+    },
+    "src\\app": {
+      "path": "src\\app",
+      "purpose": "Application code",
+      "fileCount": 4,
+      "lastAccessed": 1782167598720,
+      "keyFiles": [
+        "favicon.ico",
+        "globals.css",
+        "layout.tsx"
+      ]
+    },
+    "src\\components": {
+      "path": "src\\components",
+      "purpose": "UI components",
+      "fileCount": 23,
+      "lastAccessed": 1782167598720,
+      "keyFiles": [
+        "about.tsx",
+        "bioCard.tsx",
+        "footer.tsx"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "",
+      "accessCount": 4,
+      "lastAccessed": 1782167818567,
+      "type": "directory"
+    },
+    {
+      "path": "src\\components\\bioCard.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1782167826512,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\board\\board.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1782168527502,
+      "type": "file"
+    },
+    {
+      "path": "1740949028805.webp",
+      "accessCount": 1,
+      "lastAccessed": 1782167815653,
+      "type": "file"
+    },
+    {
+      "path": "public\\kyle.png",
+      "accessCount": 1,
+      "lastAccessed": 1782168516482,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
