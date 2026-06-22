@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"cd \\\"C:/Users/rahul/OneDrive/Desktop/website\\\" && node -e \\\"require('sharp')('1740949028805.webp').png().toFile('public/kyle.png').then(i=>console.log('OK',i)).catch(e=>{console.error('SHA...",
-  "error": "Exit code 1\nnode:internal/modules/cjs/loader:1228\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module 'sharp'\r\nRequire stack:\r\n- C:\\Users\\rahul\\OneDrive\\Desktop\\website\\[eval]\r\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)\r\n    at Function._load (node:internal/modules/cjs/loader:1055:27)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)\r\n    at Module.require (node:internal/modules/cjs/loa...",
-  "timestamp": "2026-06-22T22:48:07.318Z",
-  "retry_count": 1
-}
